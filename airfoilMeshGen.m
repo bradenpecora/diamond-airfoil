@@ -5,9 +5,11 @@ H = 4;              % Half height
 Lw = 6;             % Length of wake region
 Lf = 4;             % Length of fore region
 d = .5;             % Width of "circular" region
-fac = 1;          % Vertical stretch factor for d
-type = "diamond";   % Type of airfoil
+fac = 1;            % Vertical stretch factor for d
+type = "cylinder";   % Type of airfoil
 n = 8;              % Number of points on airfoil and "circular" region 
+ns = 1;             % Spline points
+alpha = 10;         % Angle of attack
 fileName = "blockMeshDict";
 
 nx = [40,20,40,20,10,20];    % Radial, polar, east, north, west, south
@@ -29,7 +31,8 @@ Vert(3,N/2+1:end) = 0.05;
 % Creates airfoil and "circular" region vertices
 for k = 1:2
     f = @(x)(airfoil(x,t + (k-1)*fac*d,c + (k-1)*d,type));  % Easy function call
-    pL = pathLength(f,c + (k-1)*d,0,100);
+    pL1 = pathLength(f,c + (k-1)*d,0,100);
+    pL2 = pathLength(f,0,-c - (k-1)*d,100);
     set1 = (k-1)*n + [1, n/4+1, n/2+1];
     set2 = (k-1)*n + (1:(n/2+1));
     
@@ -39,9 +42,9 @@ for k = 1:2
     
     for i = (setdiff(set2,set1) - (k-1)*n)
         if i < (n/4+1)
-            g = @(x)(pathLength(f,c + (k-1)*d,x,100) - 4*(i-1)*pL/n);
+            g = @(x)(pathLength(f,c + (k-1)*d,x,100) - 4*(i-1)*pL1/n);
         else
-            g = @(x)(pathLength(f,0,x,100) - 4*(i-n/4-1)*pL/n);
+            g = @(x)(pathLength(f,0,x,100) - 4*(i-n/4-1)*pL2/n);
         end
         opt = optimoptions('fsolve','Display','none');
         x = fsolve(g,(c+(k-1)*d)*cos(2*(i-1)*pi/n),opt);
@@ -79,6 +82,8 @@ end
 for i = (N/2+1):N
     Vert(:,i) = [1 0 0; 0 1 0; 0 0 -1]*Vert(:,i-N/2);
 end
+
+Vert(1:2,1:2*n) = [cosd(alpha) sind(alpha); -sind(alpha) cosd(alpha)]*Vert(1:2,1:2*n);
 
 % First n block in airfoil-circular region
 Block = zeros(14,bN);
@@ -181,6 +186,8 @@ for i = 1:length(Block(1,:))
         num2str(Block(14,i)), ")")];
 end
 
+
+% CHANGE TO SPLINES
 if type ~= "diamond"
     fileStr = [fileStr, ");", " ", "edges", "("];
     
@@ -188,8 +195,8 @@ if type ~= "diamond"
     f2 = @(x)(airfoil(x,t + fac*d,c + d,type)); 
     
     for i = 1:(n/2)
-        x1 = midpoint(f1,Vert(1,i),Vert(1,mod(i,n)+1));
-        x2 = midpoint(f2,Vert(1,i+n),Vert(1,mod(i,n)+1+n));
+        x1 = midpoint(f1,Vert(1,i),Vert(1,mod(i,n)+1),ns);
+        x2 = midpoint(f2,Vert(1,i+n),Vert(1,mod(i,n)+1+n),ns);
         fileStr = [fileStr, append("     arc ", num2str(i-1), " ", num2str(mod(i,n)), ...
             " ( ", num2str(x1), " ", num2str(f1(x1)), " -0.05 )"), ...
             append("     arc ", num2str(i-1+n), " ", num2str(mod(i,n)+n), ...
@@ -200,8 +207,8 @@ if type ~= "diamond"
             " ( ", num2str(x2), " ", num2str(f2(x2)), " 0.05 )")];
     end
     for i = (n/2+1):n
-        x1 = midpoint(f1,Vert(1,i),Vert(1,mod(i,n)+1));
-        x2 = midpoint(f2,Vert(1,i+n),Vert(1,mod(i,n)+1+n));
+        x1 = midpoint(f1,Vert(1,i),Vert(1,mod(i,n)+1),ns);
+        x2 = midpoint(f2,Vert(1,i+n),Vert(1,mod(i,n)+1+n),ns);
         fileStr = [fileStr, append("     arc ", num2str(i-1), " ", num2str(mod(i,n)), ...
             " ( ", num2str(x1), " ", num2str(-f1(x1)), " -0.05 )"), ...
             append("     arc ", num2str(i-1+n), " ", num2str(mod(i,n)+n), ...
@@ -277,11 +284,8 @@ fileStr = [fileStr, " ", ");", " ",...
            "   }",...
            ");"];
 
-
-
-
 writelines(fileStr,fileName)
-clear opt x g theta set* pL m s* num i j k f o 
+clear opt x g theta set* pL* m s* num i j k o ns f
 
 
 %% Plotting
@@ -293,6 +297,16 @@ if display == 1
     axis([-(Lf+1),(Lw+1),-(H+1),(H+1)])
 end
 
+%%
+f = @(x)(airfoil(x,.1,.5,"biconvex"));
+x = -.5:.001:.5;
+y = zeros(1,length(x));
+for i = 1:length(x)
+    y(i) = f(x(i));
+end
+
+plot(x,y,x,-y)
+axis([-1 1 -1 1])
 %% Functions
 function y = airfoil(x,t,c,type)
     % parametric representation of the airfoil
@@ -307,6 +321,22 @@ function y = airfoil(x,t,c,type)
             y = t*sqrt(1-x.^2/c^2);
         case "diamond"
             y = t*(1-abs(x/c));
+        case "biconvex"
+            if abs(x) < 19*c/20
+                y = t*sqrt(1-x.^2/(c)^2);
+            else
+                yi = t*sqrt(1-(19*c/20).^2/(c)^2); 
+                y = yi - 20*yi*(abs(x) - 19*c/20)/c;
+            end
+        case "airfoil"
+            if (x > -c/2) && (x < c/2) 
+                y = t*sqrt(1-(x+c/2).^2/(3*c/2)^2);
+            elseif x >= c/2
+                yi = t*sqrt(1-(c).^2/(3*c/2)^2);
+                y = yi - yi*2/c*(x-c/2);
+            else
+                y = t*sqrt(1-(x+c/2).^2/(c/2)^2);
+            end
     end
 
 end
@@ -322,11 +352,16 @@ function L = pathLength(fun,xi,xf,n)
     L = abs(L);
 end
 
-function x = midpoint(fun,x1,x2)
+function x = midpoint(fun,x1,x2,ns)
     pL1 = pathLength(fun,0,x1,100);
     pL2 = pathLength(fun,0,x2,100);
     pL = (pL1+pL2)/2;
-    g = @(x)(pathLength(fun,0,x,100) - pL);
-    opt = optimoptions('fsolve','Display','none');
-    x = fsolve(g,(x1+x2)/2,opt);    
+
+    x = zeros(1,ns);
+    for i = 1:ns
+        g = @(x)(pathLength(fun,0,x,100) - i*pL/ns);
+        opt = optimoptions('fsolve','Display','none');
+        xi = fsolve(g,(x1+x2)/2,opt);
+        x(i) = xi;
+    end
 end
