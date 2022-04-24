@@ -284,7 +284,10 @@ fileStr = [fileStr, " ", ");", " ",...
            "   }",...
            ");"];
 
-writelines(fileStr,fileName)
+fid = fopen(fileName,'w');
+fprintf(fid,'%s\n',fileStr(:));
+fclose(fid);
+% writelines(fileStr,fileName)
 clear opt x g theta set* pL* m s* num i j k o ns f
 
 
