@@ -284,7 +284,7 @@ fileStr = [fileStr, " ", ");", " ",...
            "   }",...
            ");"];
 
-writelines(fileStr,fileName)
+writematrix(fileStr',fileName,'Delimiter','tab')
 clear opt x g theta set* pL* m s* num i j k o ns f
 
 
