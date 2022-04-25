@@ -6,10 +6,10 @@ Lw = 6;             % Length of wake region
 Lf = 4;             % Length of fore region
 d = .5;             % Width of "circular" region
 fac = 1;            % Vertical stretch factor for d
-type = "cylinder";   % Type of airfoil
+type = ["diamond","cylinder"];  % Type of airfoil
 n = 8;              % Number of points on airfoil and "circular" region 
 ns = 1;             % Spline points
-alpha = 10;         % Angle of attack
+alpha = 0;         % Angle of attack
 fileName = "blockMeshDict";
 
 nx = [40,20,40,20,10,20];    % Radial, polar, east, north, west, south
@@ -30,7 +30,7 @@ Vert(3,N/2+1:end) = 0.05;
 
 % Creates airfoil and "circular" region vertices
 for k = 1:2
-    f = @(x)(airfoil(x,t + (k-1)*fac*d,c + (k-1)*d,type));  % Easy function call
+    f = @(x)(airfoil(x,t + (k-1)*fac*d,c + (k-1)*d,type(k)));  % Easy function call
     pL1 = pathLength(f,c + (k-1)*d,0,100);
     pL2 = pathLength(f,0,-c - (k-1)*d,100);
     set1 = (k-1)*n + [1, n/4+1, n/2+1];
@@ -78,12 +78,12 @@ for i = (m):-1:(m/2+2)
     j = j + 1;
 end
 
+Vert(1:2,1:2*n) = [cosd(alpha) sind(alpha); -sind(alpha) cosd(alpha)]*Vert(1:2,1:2*n);
+
 % Flips vertices
 for i = (N/2+1):N
     Vert(:,i) = [1 0 0; 0 1 0; 0 0 -1]*Vert(:,i-N/2);
 end
-
-Vert(1:2,1:2*n) = [cosd(alpha) sind(alpha); -sind(alpha) cosd(alpha)]*Vert(1:2,1:2*n);
 
 % First n block in airfoil-circular region
 Block = zeros(14,bN);
@@ -155,7 +155,7 @@ fileStr = [ append("// nx = [ ", num2str(nx(1))," ", num2str(nx(2))," ", num2str
             append("// Lf = ", num2str(Lf)),...
             append("// Lw = ", num2str(Lw)),...
             append("// n = ", num2str(8)),...
-            append("// Airfoil type is ", type),...
+            append("// Airfoil type is ", type(1)),...
             " " ,...
             "FoamFile" , ...
             "{", ...
@@ -186,13 +186,15 @@ for i = 1:length(Block(1,:))
         num2str(Block(14,i)), ")")];
 end
 
+Vert(1:2,1:2*n) = [cosd(alpha) -sind(alpha); sind(alpha) cosd(alpha)]*Vert(1:2,1:2*n);
+
 
 % CHANGE TO SPLINES
-if type ~= "diamond"
+if type(1) ~= "diamond" % Need to update for non-zero alpha
     fileStr = [fileStr, ");", " ", "edges", "("];
     
-    f1 = @(x)(airfoil(x,t,c,type));
-    f2 = @(x)(airfoil(x,t + fac*d,c + d,type)); 
+    f1 = @(x)(airfoil(x,t,c,type(1)));
+    f2 = @(x)(airfoil(x,t + fac*d,c + d,type(2))); 
     
     for i = 1:(n/2)
         x1 = midpoint(f1,Vert(1,i),Vert(1,mod(i,n)+1),ns);
@@ -219,6 +221,39 @@ if type ~= "diamond"
             " ( ", num2str(x2), " ", num2str(-f2(x2)), " 0.05 )")];
     end
 end
+
+if type(2) ~= "diamond"
+    fileStr = [fileStr, ");", " ", "edges", "("];
+    
+    f2 = @(x)(airfoil(x,t + fac*d,c + d,type(2)));
+
+    for i = 1:(n/2)
+        x2 = midpoint(f2,Vert(1,i+n),Vert(1,mod(i,n)+1+n),ns);
+
+        y1 = [x2;f2(x2)];
+        y = [cosd(alpha) sind(alpha); -sind(alpha) cosd(alpha)]*y1;
+
+        fileStr = [fileStr, append("     arc ", num2str(i-1+n), " ", num2str(mod(i,n)+n), ...
+            " ( ", num2str(y(1)), " ", num2str(y(2)), " -0.05 )"), ...
+            append("     arc ", num2str(i-1+n+N/2), " ", num2str(mod(i,n)+n+N/2), ...
+            " ( ", num2str(y(1)), " ", num2str(y(2)), " 0.05 )")];
+    end
+
+    for i = (n/2+1):n
+        x2 = midpoint(f2,Vert(1,i+n),Vert(1,mod(i,n)+1+n),ns);
+
+        y1 = [x2;f2(x2)];
+        y = [cosd(alpha) sind(alpha); -sind(alpha) cosd(alpha)]*y1;
+
+        fileStr = [fileStr, append("     arc ", num2str(i-1+n), " ", num2str(mod(i,n)+n), ...
+            " ( ", num2str(y(1)), " ", num2str(-y(2)), " -0.05 )"), ...
+            append("     arc ", num2str(i-1+n+N/2), " ", num2str(mod(i,n)+n+N/2), ...
+            " ( ", num2str(y(1)), " ", num2str(-y(2)), " 0.05 )")];
+    end
+end 
+
+Vert(1:2,1:2*n) = [cosd(alpha) sind(alpha); -sind(alpha) cosd(alpha)]*Vert(1:2,1:2*n);
+
 
 fileStr = [fileStr, " ", ");", " ",...
            "boundary",...
@@ -297,16 +332,6 @@ if display == 1
     axis([-(Lf+1),(Lw+1),-(H+1),(H+1)])
 end
 
-%%
-f = @(x)(airfoil(x,.1,.5,"biconvex"));
-x = -.5:.001:.5;
-y = zeros(1,length(x));
-for i = 1:length(x)
-    y(i) = f(x(i));
-end
-
-plot(x,y,x,-y)
-axis([-1 1 -1 1])
 %% Functions
 function y = airfoil(x,t,c,type)
     % parametric representation of the airfoil
