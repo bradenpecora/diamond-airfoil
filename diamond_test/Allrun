@@ -7,7 +7,7 @@ cd ${0%/*} || exit 1    # Run from this directory
 runApplication blockMesh # create the mesh
 runApplication checkMesh # check the mesh
 
-runApplication icoFoam # run the solver 
+# runApplication icoFoam # run the solver 
 
 # runApplication postProcess -latestTime -func sample
 #------------------------------------------------------------------------------

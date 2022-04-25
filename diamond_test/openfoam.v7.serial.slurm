@@ -3,7 +3,7 @@
 # See https://portal.tacc.utexas.edu/user-guides/stampede2/#running 
 # for more details
 
-#SBATCH -J OF1      # Job name
+#SBATCH -J OF-finalproj      # Job name
 #SBATCH -o job.o%j       # Name of stdout output file
 #SBATCH -e job.e%j       # Name of stderr error file
 
@@ -26,6 +26,6 @@ module list
 pwd
 date
 
-bash ./AllrunParallel
+bash ./Allrun
 
 date

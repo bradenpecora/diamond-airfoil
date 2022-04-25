@@ -1,8 +1,0 @@
-/work2/07705/jmj3957/stampede2/COE347FinalProject/Simulations/Incompressible/diamond_test
-Thu Apr 14 01:41:48 CDT 2022
-Running blockMesh on /work2/07705/jmj3957/stampede2/COE347FinalProject/Simulations/Incompressible/diamond_test
-Running checkMesh on /work2/07705/jmj3957/stampede2/COE347FinalProject/Simulations/Incompressible/diamond_test
-Running decomposePar on /work2/07705/jmj3957/stampede2/COE347FinalProject/Simulations/Incompressible/diamond_test
-Running icoFoam in parallel on /work2/07705/jmj3957/stampede2/COE347FinalProject/Simulations/Incompressible/diamond_test using 36 processes
-Running reconstructPar on /work2/07705/jmj3957/stampede2/COE347FinalProject/Simulations/Incompressible/diamond_test
-Thu Apr 14 01:42:21 CDT 2022

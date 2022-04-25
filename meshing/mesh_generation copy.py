@@ -139,6 +139,7 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     create_node(nodes[3].x, hb) #13
     create_node(lw,hb)
     create_node(lw, nodes[3].y)
+    nodes += [node.flip_z() for node in nodes]
 
     faces=generate_faces(nodes)
     [face.plot() for face in faces]
@@ -268,7 +269,7 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('         (0 16 17 1)')
     a('         (1 17 18 2)')
     a('         (2 18 19 3)')
-    a('         (3 19 20 4)')
+    a('         (3 19 16 0)')
     a('     );')
     a(' }')
     a(' top')
