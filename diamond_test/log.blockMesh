@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 7-49b2b3b8b082
 Exec   : blockMesh
-Date   : Apr 24 2022
-Time   : 23:29:35
-Host   : "c455-004.stampede2.tacc.utexas.edu"
-PID    : 152056
+Date   : Apr 25 2022
+Time   : 00:00:16
+Host   : "c455-093.stampede2.tacc.utexas.edu"
+PID    : 271438
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/diamond_test
 nProcs : 1
@@ -49,36 +49,36 @@ Creating merge list .
 Creating polyMesh from blockMesh
 Creating points with scale 1
     Block 0 cell size :
-        i : 0.0731026 .. 0.438616 0.0721766 .. 0.43306 0.0731026 .. 0.438616 0.0721766 .. 0.43306 
-        j : 0.0790569 .. 0.0790569 0.0781411 .. 0.0781411 0.0790569 .. 0.0790569 0.0781411 .. 0.0781411 
-        k : 0.1
-    Block 1 cell size :
         i : 0.0360629 .. 0.216377
         j : 0.0868378 .. 0.434189
         k : 0.1
-    Block 2 cell size :
+    Block 1 cell size :
         i : 0.0868378 .. 0.434189 0.0863365 .. 0.431683 0.0868378 .. 0.434189 0.0863365 .. 0.431683 
         j : 0.0790569 .. 0.0790569 0.0788195 .. 0.0788195 0.0790569 .. 0.0790569 0.0788195 .. 0.0788195 
         k : 0.1
+    Block 2 cell size :
+        i : 0.0667861 .. 0.333931 0.0669405 .. 0.334703 0.0667861 .. 0.333931 0.0669405 .. 0.334703 
+        j : 0.0790569 .. 0.0790569 0.0790344 .. 0.0790344 0.0790569 .. 0.0790569 0.0790344 .. 0.0790344 
+        k : 0.1
     Block 3 cell size :
-        i : 0.0667861 .. 0.333931
-        j : 0.0519185 .. 0.519185
+        i : 0.0729633 .. 0.364816
+        j : 0.0256124 .. 0.256124
         k : 0.1
     Block 4 cell size :
-        i : 0.0519185 .. 0.519185 0.0512608 .. 0.512608 0.0519185 .. 0.519185 0.0512608 .. 0.512608 
-        j : 0.0790569 .. 0.0790569 0.0784065 .. 0.0784065 0.0790569 .. 0.0790569 0.0784065 .. 0.0784065 
-        k : 0.1
-    Block 5 cell size :
         i : 0.0256124 .. 0.256124
         j : 0.0868378 .. 0.434189
         k : 0.1
-    Block 6 cell size :
+    Block 5 cell size :
         i : 0.0868378 .. 0.434189 0.0863365 .. 0.431683 0.0868378 .. 0.434189 0.0863365 .. 0.431683 
         j : 0.0790569 .. 0.0790569 0.0788195 .. 0.0788195 0.0790569 .. 0.0790569 0.0788195 .. 0.0788195 
         k : 0.1
+    Block 6 cell size :
+        i : 0.0667861 .. 0.333931 0.0669405 .. 0.334703 0.0667861 .. 0.333931 0.0669405 .. 0.334703 
+        j : 0.0790569 .. 0.0790569 0.0790344 .. 0.0790344 0.0790569 .. 0.0790569 0.0790344 .. 0.0790344 
+        k : 0.1
     Block 7 cell size :
-        i : 0.0667861 .. 0.333931
-        j : 0.0731026 .. 0.438616
+        i : 0.0729633 .. 0.364816
+        j : 0.0360629 .. 0.216377
         k : 0.1
 Creating cells
 Creating patches
@@ -97,11 +97,11 @@ Mesh Information
 ----------------
 Patches
 ----------------
-  patch 0 (start: 16520 size: 100) name: inlet
-  patch 1 (start: 16620 size: 100) name: outlet
-  patch 2 (start: 16720 size: 160) name: airfoil
-  patch 3 (start: 16880 size: 100) name: top
-  patch 4 (start: 16980 size: 100) name: bottom
+  patch 0 (start: 16520 size: 60) name: inlet
+  patch 1 (start: 16580 size: 60) name: outlet
+  patch 2 (start: 16640 size: 160) name: airfoil
+  patch 3 (start: 16800 size: 140) name: top
+  patch 4 (start: 16940 size: 140) name: bottom
   patch 5 (start: 17080 size: 16800) name: defaultFaces
 
 End

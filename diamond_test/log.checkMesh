@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 7-49b2b3b8b082
 Exec   : checkMesh
-Date   : Apr 24 2022
-Time   : 23:29:36
-Host   : "c455-004.stampede2.tacc.utexas.edu"
-PID    : 152125
+Date   : Apr 25 2022
+Time   : 00:00:18
+Host   : "c455-093.stampede2.tacc.utexas.edu"
+PID    : 271509
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/diamond_test
 nProcs : 1
@@ -56,11 +56,11 @@ Checking topology...
 
 Checking patch topology for multiply connected surfaces...
     Patch               Faces    Points   Surface topology                  
-    inlet               100      202      ok (non-closed singly connected)  
-    outlet              100      202      ok (non-closed singly connected)  
+    inlet               60       122      ok (non-closed singly connected)  
+    outlet              60       122      ok (non-closed singly connected)  
     airfoil             160      320      ok (non-closed singly connected)  
-    top                 100      202      ok (non-closed singly connected)  
-    bottom              100      202      ok (non-closed singly connected)  
+    top                 140      282      ok (non-closed singly connected)  
+    bottom              140      282      ok (non-closed singly connected)  
     defaultFaces        16800    17360    ok (non-closed singly connected)  
 
 Checking geometry...
@@ -68,17 +68,15 @@ Checking geometry...
     Mesh has 2 geometric (non-empty/wedge) directions (1 1 0)
     Mesh has 2 solution (non-empty) directions (1 1 0)
     All edges aligned with or perpendicular to non-empty directions.
-    Boundary openness (1.09625e-18 1.64822e-18 2.33113e-16) OK.
-    Max cell openness = 2.17785e-16 OK.
-    Max aspect ratio = 44.7705 OK.
-    Minimum face area = 0.000300829. Maximum face area = 0.173372.  Face area magnitudes OK.
-    Min volume = 3.00829e-05. Max volume = 0.0173372.  Total volume = 13.8.  Cell volumes OK.
-    Mesh non-orthogonality Max: 81.5299 average: 38.9675
-   *Number of severely non-orthogonal (> 70 degrees) faces: 3713.
+    Boundary openness (-8.45637e-20 1.36532e-18 5.03618e-16) OK.
+    Max cell openness = 1.8387e-16 OK.
+    Max aspect ratio = 16.9523 OK.
+    Minimum face area = 0.00186876. Maximum face area = 0.111206.  Face area magnitudes OK.
+    Min volume = 0.000186876. Max volume = 0.0111206.  Total volume = 13.8.  Cell volumes OK.
+    Mesh non-orthogonality Max: 28.275 average: 11.1638
     Non-orthogonality check OK.
-  <<Writing 3713 non-orthogonal faces to set nonOrthoFaces
     Face pyramids OK.
-    Max skewness = 2.69224 OK.
+    Max skewness = 0.520552 OK.
     Coupled point location match (average 0) OK.
 
 Mesh OK.
