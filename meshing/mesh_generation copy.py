@@ -245,10 +245,9 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type patch;')
     a('     faces')
     a('     (')
-    a('         (22 54 55 23)')
-    a('         (23 55 56 24)')
-    a('         (24 56 57 25)')
-    a('         (25 57 58 26)')
+    a('         (8 24 25 9)')
+    a('         (9 25 26 10)')
+    a('         (10 26 27 11)')
     a('     );')
     a(' }')
     a(' outlet')
@@ -256,10 +255,9 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type patch;')
     a('     faces')
     a('     (')
-    a('         (18 50 49 17)')
-    a('         (17 49 48 16)')
-    a('         (16 48 63 31)')
-    a('         (31 63 62 30)')
+    a('         (14 30 31 15)')
+    a('         (15 31 20 4)')
+    a('         (4 20 21 5)')
     a('     );')
     a(' }')
     a(' airfoil')
@@ -267,14 +265,10 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type wall;')
     a('     faces')
     a('     (')
-    a('         (0 32 33 1)')
-    a('         (1 33 34 2)')
-    a('         (2 34 35 3)')
-    a('         (3 35 36 4)')
-    a('         (4 36 37 5)')
-    a('         (5 37 38 6)')
-    a('         (6 38 39 7)')
-    a('         (7 39 32 0)')
+    a('         (0 16 17 1)')
+    a('         (1 17 18 2)')
+    a('         (2 18 19 3)')
+    a('         (3 19 20 4)')
     a('     );')
     a(' }')
     a(' top')
@@ -282,10 +276,9 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type symmetryPlane;')
     a('     faces')
     a('     (')
-    a('         (22 54 53 21)')
-    a('         (21 53 52 20)')
-    a('         (20 52 51 19)')
-    a('         (19 51 50 18)')
+    a('         (5 22 21 6)')
+    a('         (6 23 22 7)')
+    a('         (7 24 23 8)')
     a('     );')
     a(' }')
     a(' bottom')
@@ -293,10 +286,9 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type symmetryPlane;')
     a('     faces')
     a('     (')
-    a('         (26 58 59 27)')
-    a('         (27 59 60 28)')
-    a('         (28 60 61 29)')
-    a('         (29 61 62 30)')
+    a('         (11 27 28 12)')
+    a('         (12 28 29 13)')
+    a('         (13 29 30 14)')
     a('     );')
     a(' }')
     a('')
@@ -304,7 +296,27 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
 
     return ''.join(output)
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
+    output = main(
+        c = 3,
+        t = 3,
+        lf = 6,
+        lw = 6,
+        ht = 6,
+        hb = 6,
+        alpha = 10,
+        n_foil = 10,
+        n_north = 10,
+        n_east= 10,
+        n_south= 10,
+        n_west=10,
+        e_foil=1,
+        e_north=1,
+        e_east=1,
+        e_south=1,
+        e_west=1,
+        user_name='bsp'
+    )
 
-#     file = open(file_name, 'w')
-#     file.write(output)
+    file = open('blockMeshDict', 'w')
+    file.write(output)
