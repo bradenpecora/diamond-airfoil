@@ -1,0 +1,6 @@
+/work/07674/bradenp/stampede2/diamond-airfoil/mach-3-wind-tunnel-with-step
+Mon Apr 25 19:58:16 CDT 2022
+Running blockMesh on /work/07674/bradenp/stampede2/diamond-airfoil/mach-3-wind-tunnel-with-step
+Running checkMesh on /work/07674/bradenp/stampede2/diamond-airfoil/mach-3-wind-tunnel-with-step
+Running rhoCentralFoam on /work/07674/bradenp/stampede2/diamond-airfoil/mach-3-wind-tunnel-with-step
+Mon Apr 25 20:00:54 CDT 2022
