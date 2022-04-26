@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : blockMesh
 Date   : Apr 25 2022
-Time   : 19:58:18
-Host   : "c411-102.stampede2.tacc.utexas.edu"
-PID    : 143315
+Time   : 20:12:06
+Host   : "c469-001.stampede2.tacc.utexas.edu"
+PID    : 82125
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/mach-3-wind-tunnel-with-step
 nProcs : 1
