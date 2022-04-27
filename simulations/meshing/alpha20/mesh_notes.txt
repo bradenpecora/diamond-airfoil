@@ -25,7 +25,7 @@ mesh0 alpha20
         Running same time as mesh2alpha10 just with alpha =20
         CRASHED for ... not sure
 
-mesh2alpha10
+mesh1
 
     // User: bsp
     // Mesh generated on 04/26/2022 22:53:13
@@ -47,3 +47,32 @@ mesh2alpha10
     // e_east = 10
     // e_south = 10
     // e_west = 10
+
+    Notes:
+        Also crashed 
+
+mesh 2
+
+    // User: bsp
+    // Mesh generated on 04/26/2022 22:59:59
+
+    // c = 3
+    // t = 1
+    // lf = -6
+    // lw = 6
+    // ht = 6
+    // hb = -6
+    // alpha = -20
+    // n_foil = 25
+    // n_north = 15
+    // n_east = 10
+    // n_south = 20
+    // n_west = 10
+    // e_foil = 1
+    // e_north = 10
+    // e_east = 10
+    // e_south = 10
+    // e_west = 10
+
+    Notes:
+        Halved most values
