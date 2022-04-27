@@ -308,16 +308,16 @@ if __name__ == '__main__':
         ht = 6,
         hb = 6,
         alpha = -20,
-        n_foil = 25,
+        n_foil = 15,
         n_north = 15,
         n_east= 10,
         n_south= 20,
         n_west=10,
         e_foil=1,
-        e_north=10,
-        e_east=10,
-        e_south=10,
-        e_west=10,
+        e_north=5,
+        e_east=2,
+        e_south=5,
+        e_west=2,
         user_name='bsp'
     )
 

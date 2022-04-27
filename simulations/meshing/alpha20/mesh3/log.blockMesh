@@ -1,0 +1,108 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-49b2b3b8b082
+Exec   : blockMesh
+Date   : Apr 26 2022
+Time   : 23:09:10
+Host   : "c406-054.stampede2.tacc.utexas.edu"
+PID    : 189324
+I/O    : uncollated
+Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh3
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh3/system/blockMeshDict"
+No non-linear block edges defined
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+--> FOAM Warning : 
+    From function Foam::polyMesh::polyMesh(const Foam::IOobject &, Foam::Field<Foam::Vector<double>> &&, const Foam::List<Foam::cellShape> &, const Foam::List<Foam::List<Foam::face>> &, const Foam::List<Foam::word> &, const Foam::PtrList<Foam::dictionary> &, const Foam::word &, const Foam::word &, bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 873
+    Found 16 undefined faces in mesh; adding to default patch.
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 8
+		Number of boundary faces : 32
+		Number of defined boundary faces : 32
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.219515 .. 0.43903
+        j : 0.185712 .. 0.928561
+        k : 0.1
+    Block 1 cell size :
+        i : 0.185712 .. 0.928561 0.182248 .. 0.911241 0.185712 .. 0.928561 0.182248 .. 0.911241 
+        j : 0.210819 .. 0.210819 0.208683 .. 0.208683 0.210819 .. 0.210819 0.208683 .. 0.208683 
+        k : 0.1
+    Block 2 cell size :
+        i : 0.133754 .. 0.668768 0.133601 .. 0.668007 0.133754 .. 0.668768 0.133601 .. 0.668007 
+        j : 0.210819 .. 0.210819 0.210814 .. 0.210814 0.210819 .. 0.210819 0.210814 .. 0.210814 
+        k : 0.1
+    Block 3 cell size :
+        i : 0.131471 .. 0.657353
+        j : 0.219515 .. 0.43903
+        k : 0.1
+    Block 4 cell size :
+        i : 0.219515 .. 0.43903
+        j : 0.139823 .. 0.699115
+        k : 0.1
+    Block 5 cell size :
+        i : 0.139823 .. 0.699115 0.137215 .. 0.686075 0.139823 .. 0.699115 0.137215 .. 0.686075 
+        j : 0.210819 .. 0.210819 0.209207 .. 0.209207 0.210819 .. 0.210819 0.209207 .. 0.209207 
+        k : 0.1
+    Block 6 cell size :
+        i : 0.100703 .. 0.503516 0.100589 .. 0.502943 0.100703 .. 0.503516 0.100589 .. 0.502943 
+        j : 0.210819 .. 0.210819 0.210815 .. 0.210815 0.210819 .. 0.210819 0.210815 .. 0.210815 
+        k : 0.1
+    Block 7 cell size :
+        i : 0.0989845 .. 0.494922
+        j : 0.219515 .. 0.43903
+        k : 0.1
+Creating cells
+Creating patches
+
+There are no merge patch pairs edges
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-6 -6 -0.05) (6 6 0.05)
+  nPoints: 3730
+  nCells: 1750
+  nFaces: 7115
+  nInternalFaces: 3385
+----------------
+Patches
+----------------
+  patch 0 (start: 3385 size: 35) name: inlet
+  patch 1 (start: 3420 size: 35) name: outlet
+  patch 2 (start: 3455 size: 60) name: airfoil
+  patch 3 (start: 3515 size: 50) name: top
+  patch 4 (start: 3565 size: 50) name: bottom
+  patch 5 (start: 3615 size: 3500) name: defaultFaces
+
+End
+

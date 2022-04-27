@@ -76,3 +76,33 @@ mesh 2
 
     Notes:
         Halved most values
+        failed nevertheless
+
+mesh 3
+
+
+    // User: bsp
+    // Mesh generated on 04/26/2022 23:07:34
+
+    // c = 3
+    // t = 1
+    // lf = -6
+    // lw = 6
+    // ht = 6
+    // hb = -6
+    // alpha = -20
+    // n_foil = 15
+    // n_north = 15
+    // n_east = 10
+    // n_south = 20
+    // n_west = 10
+    // e_foil = 1
+    // e_north = 5
+    // e_east = 2
+    // e_south = 5
+    // e_west = 2
+
+    Notes:
+        Made even smaller
+        still failed
+        issue probably not with meshing?
