@@ -27,14 +27,14 @@ thermoType
 }
 
 // Note: these are the properties for a "normalised" inviscid gas
-//       for which the speed of sound is 1 m/s at a temperature of 1K
+//       for which the speed of sound is 1 m/s at a temperature of 100K
 //       and gamma = 7/5
 mixture
 {
     specie
     {
         nMoles          1;
-        molWeight       11640.3;
+        molWeight       1164030;
     }
     thermodynamics
     {
