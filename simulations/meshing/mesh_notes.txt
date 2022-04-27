@@ -1,0 +1,47 @@
+Mesh 0
+    // User: bsp
+    // Mesh generated on 04/24/2022 23:57:47
+
+    // c = 3
+    // t = 1
+    // lf = -6
+    // lw = 6
+    // ht = 6
+    // hb = -6
+    // alpha = -10
+    // n_foil = 40
+    // n_north = 30
+    // n_east = 30
+    // n_south = 30
+    // n_west = 30
+    // e_foil = 1
+    // e_north = 5
+    // e_east = 6
+    // e_south = 5
+    // e_west = 10
+
+    Notes:
+        Too coarse of a Mesh
+        Very fast solve time
+
+Mesh 1
+    // User: bsp
+    // Mesh generated on 04/26/2022 21:53:37
+
+    // c = 3
+    // t = 1
+    // lf = -6
+    // lw = 6
+    // ht = 6
+    // hb = -6
+    // alpha = -10
+    // n_foil = 50
+    // n_north = 35
+    // n_east = 30
+    // n_south = 35
+    // n_west = 30
+    // e_foil = 1
+    // e_north = 10
+    // e_east = 10
+    // e_south = 10
+    // e_west = 10

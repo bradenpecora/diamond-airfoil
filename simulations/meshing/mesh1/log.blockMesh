@@ -1,0 +1,108 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-49b2b3b8b082
+Exec   : blockMesh
+Date   : Apr 26 2022
+Time   : 21:57:45
+Host   : "c404-022.stampede2.tacc.utexas.edu"
+PID    : 252323
+I/O    : uncollated
+Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/mesh1
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/mesh1/system/blockMeshDict"
+No non-linear block edges defined
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+--> FOAM Warning : 
+    From function Foam::polyMesh::polyMesh(const Foam::IOobject &, Foam::Field<Foam::Vector<double>> &&, const Foam::List<Foam::cellShape> &, const Foam::List<Foam::List<Foam::face>> &, const Foam::List<Foam::word> &, const Foam::PtrList<Foam::dictionary> &, const Foam::word &, const Foam::word &, bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 873
+    Found 16 undefined faces in mesh; adding to default patch.
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 8
+		Number of boundary faces : 32
+		Number of defined boundary faces : 32
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0256124 .. 0.256124
+        j : 0.0471014 .. 0.471014
+        k : 0.1
+    Block 1 cell size :
+        i : 0.0471014 .. 0.471014 0.0468838 .. 0.468838 0.0471014 .. 0.471014 0.0468838 .. 0.468838 
+        j : 0.0632456 .. 0.0632456 0.0631423 .. 0.0631423 0.0632456 .. 0.0632456 0.0631423 .. 0.0631423 
+        k : 0.1
+    Block 2 cell size :
+        i : 0.0362252 .. 0.362252 0.0362922 .. 0.362922 0.0362252 .. 0.362252 0.0362922 .. 0.362922 
+        j : 0.0632456 .. 0.0632456 0.0632358 .. 0.0632358 0.0632456 .. 0.0632456 0.0632358 .. 0.0632358 
+        k : 0.1
+    Block 3 cell size :
+        i : 0.0395757 .. 0.395757
+        j : 0.0256124 .. 0.256124
+        k : 0.1
+    Block 4 cell size :
+        i : 0.0256124 .. 0.256124
+        j : 0.0471014 .. 0.471014
+        k : 0.1
+    Block 5 cell size :
+        i : 0.0471014 .. 0.471014 0.0468838 .. 0.468838 0.0471014 .. 0.471014 0.0468838 .. 0.468838 
+        j : 0.0632456 .. 0.0632456 0.0631423 .. 0.0631423 0.0632456 .. 0.0632456 0.0631423 .. 0.0631423 
+        k : 0.1
+    Block 6 cell size :
+        i : 0.0362252 .. 0.362252 0.0362922 .. 0.362922 0.0362252 .. 0.362252 0.0362922 .. 0.362922 
+        j : 0.0632456 .. 0.0632456 0.0632358 .. 0.0632358 0.0632456 .. 0.0632456 0.0632358 .. 0.0632358 
+        k : 0.1
+    Block 7 cell size :
+        i : 0.0395757 .. 0.395757
+        j : 0.0256124 .. 0.256124
+        k : 0.1
+Creating cells
+Creating patches
+
+There are no merge patch pairs edges
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-6 -6 -0.05) (6 6 0.05)
+  nPoints: 23060
+  nCells: 11200
+  nFaces: 45130
+  nInternalFaces: 22070
+----------------
+Patches
+----------------
+  patch 0 (start: 22070 size: 70) name: inlet
+  patch 1 (start: 22140 size: 70) name: outlet
+  patch 2 (start: 22210 size: 200) name: airfoil
+  patch 3 (start: 22410 size: 160) name: top
+  patch 4 (start: 22570 size: 160) name: bottom
+  patch 5 (start: 22730 size: 22400) name: defaultFaces
+
+End
+
