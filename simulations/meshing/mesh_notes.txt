@@ -45,3 +45,61 @@ Mesh 1
     // e_east = 10
     // e_south = 10
     // e_west = 10
+
+    Notes:
+        Took about 10 minutes
+        still could use more resolution 
+        shock will have same angle so as long as we a) use a point to calculate 
+            beta that is near the foil and b) use very fine meshing near the foil,
+            we should be fine
+
+Mesh 2
+    // User: bsp
+    // Mesh generated on 04/26/2022 22:22:04
+
+    // c = 3
+    // t = 1
+    // lf = -6
+    // lw = 6
+    // ht = 6
+    // hb = -6
+    // alpha = -10
+    // n_foil = 55
+    // n_north = 35
+    // n_east = 30
+    // n_south = 40
+    // n_west = 30
+    // e_foil = 1
+    // e_north = 10
+    // e_east = 10
+    // e_south = 5
+    // e_west = 10
+
+    Notes:
+
+
+mesh2alpha20
+
+    // User: bsp
+    // Mesh generated on 04/26/2022 22:27:49
+
+    // c = 3
+    // t = 1
+    // lf = -6
+    // lw = 6
+    // ht = 6
+    // hb = -6
+    // alpha = -20
+    // n_foil = 55
+    // n_north = 35
+    // n_east = 30
+    // n_south = 40
+    // n_west = 30
+    // e_foil = 1
+    // e_north = 10
+    // e_east = 10
+    // e_south = 5
+    // e_west = 10
+
+    Notes: 
+        Running same time as mesh2 just with alpha =20
