@@ -1,0 +1,6 @@
+/work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh1
+Tue Apr 26 22:55:05 CDT 2022
+Running blockMesh on /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh1
+Running checkMesh on /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh1
+Running rhoCentralFoam on /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh1
+Tue Apr 26 22:55:20 CDT 2022

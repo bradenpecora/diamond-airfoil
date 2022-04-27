@@ -1,0 +1,49 @@
+mesh0 alpha20
+
+    // User: bsp
+    // Mesh generated on 04/26/2022 22:27:49
+
+    // c = 3
+    // t = 1
+    // lf = -6
+    // lw = 6
+    // ht = 6
+    // hb = -6
+    // alpha = -20
+    // n_foil = 55
+    // n_north = 35
+    // n_east = 30
+    // n_south = 40
+    // n_west = 30
+    // e_foil = 1
+    // e_north = 10
+    // e_east = 10
+    // e_south = 5
+    // e_west = 10
+
+    Notes: 
+        Running same time as mesh2alpha10 just with alpha =20
+        CRASHED for ... not sure
+
+mesh2alpha10
+
+    // User: bsp
+    // Mesh generated on 04/26/2022 22:53:13
+
+    // c = 3
+    // t = 1
+    // lf = -6
+    // lw = 6
+    // ht = 6
+    // hb = -6
+    // alpha = -20
+    // n_foil = 50
+    // n_north = 30
+    // n_east = 20
+    // n_south = 40
+    // n_west = 20
+    // e_foil = 1
+    // e_north = 10
+    // e_east = 10
+    // e_south = 10
+    // e_west = 10

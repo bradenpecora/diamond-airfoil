@@ -1,6 +1,6 @@
 
 // User: bsp
-// Mesh generated on 04/26/2022 22:53:13
+// Mesh generated on 04/26/2022 22:27:49
 
 // c = 3
 // t = 1
@@ -9,15 +9,15 @@
 // ht = 6
 // hb = -6
 // alpha = -20
-// n_foil = 50
-// n_north = 30
-// n_east = 20
+// n_foil = 55
+// n_north = 35
+// n_east = 30
 // n_south = 40
-// n_west = 20
+// n_west = 30
 // e_foil = 1
 // e_north = 10
 // e_east = 10
-// e_south = 10
+// e_south = 5
 // e_west = 10
 
 FoamFile
@@ -69,21 +69,21 @@ vertices
 blocks
 (
     // block 0
-   hex (0 4 5 6 16 20 21 22) (20 30 1) simpleGrading ( 10 10 1)
+   hex (0 4 5 6 16 20 21 22) (30 35 1) simpleGrading ( 10 10 1)
     // block 1
-   hex (0 6 7 1 16 22 23 17) (30 50 1) simpleGrading ( 10 1 1)
+   hex (0 6 7 1 16 22 23 17) (35 55 1) simpleGrading ( 10 1 1)
     // block 2
-   hex (1 7 8 2 17 23 24 18) (30 50 1) simpleGrading ( 10 1 1)
+   hex (1 7 8 2 17 23 24 18) (35 55 1) simpleGrading ( 10 1 1)
     // block 3
-   hex (2 8 9 10 18 24 25 26) (30 20 1) simpleGrading ( 10 10 1)
+   hex (2 8 9 10 18 24 25 26) (35 30 1) simpleGrading ( 10 10 1)
     // block 4
-   hex (2 10 11 12 18 26 27 28) (20 40 1) simpleGrading ( 10 10 1)
+   hex (2 10 11 12 18 26 27 28) (30 40 1) simpleGrading ( 10 5 1)
     // block 5
-   hex (2 12 13 3 18 28 29 19) (40 50 1) simpleGrading ( 10 1 1)
+   hex (2 12 13 3 18 28 29 19) (40 55 1) simpleGrading ( 5 1 1)
     // block 6
-   hex (3 13 14 0 19 29 30 16) (40 50 1) simpleGrading ( 10 1 1)
+   hex (3 13 14 0 19 29 30 16) (40 55 1) simpleGrading ( 5 1 1)
     // block 7
-   hex (0 14 15 4 16 30 31 20) (40 20 1) simpleGrading ( 10 10 1)
+   hex (0 14 15 4 16 30 31 20) (40 30 1) simpleGrading ( 5 10 1)
 );
 
 

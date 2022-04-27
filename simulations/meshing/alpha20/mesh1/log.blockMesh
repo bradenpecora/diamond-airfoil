@@ -1,0 +1,108 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-49b2b3b8b082
+Exec   : blockMesh
+Date   : Apr 26 2022
+Time   : 22:55:08
+Host   : "c403-034.stampede2.tacc.utexas.edu"
+PID    : 46774
+I/O    : uncollated
+Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh1
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh1/system/blockMeshDict"
+No non-linear block edges defined
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+--> FOAM Warning : 
+    From function Foam::polyMesh::polyMesh(const Foam::IOobject &, Foam::Field<Foam::Vector<double>> &&, const Foam::List<Foam::cellShape> &, const Foam::List<Foam::List<Foam::face>> &, const Foam::List<Foam::word> &, const Foam::PtrList<Foam::dictionary> &, const Foam::word &, const Foam::word &, bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 873
+    Found 16 undefined faces in mesh; adding to default patch.
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 8
+		Number of boundary faces : 32
+		Number of defined boundary faces : 32
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0398336 .. 0.398336
+        j : 0.059087 .. 0.59087
+        k : 0.1
+    Block 1 cell size :
+        i : 0.059087 .. 0.59087 0.0587564 .. 0.587564 0.059087 .. 0.59087 0.0587564 .. 0.587564 
+        j : 0.0632456 0.0630406 .. 0.0630406 0.0632456 0.0630406 .. 0.0630406 
+        k : 0.1
+    Block 2 cell size :
+        i : 0.0425556 .. 0.425556 0.0425411 .. 0.425411 0.0425556 .. 0.425556 0.0425411 .. 0.425411 
+        j : 0.0632456 .. 0.0632456
+        k : 0.1
+    Block 3 cell size :
+        i : 0.0418293 .. 0.418293
+        j : 0.0398336 .. 0.398336
+        k : 0.1
+    Block 4 cell size :
+        i : 0.0398336 .. 0.398336
+        j : 0.0444739 .. 0.444739
+        k : 0.1
+    Block 5 cell size :
+        i : 0.0444739 .. 0.444739 0.044225 .. 0.44225 0.0444739 .. 0.444739 0.044225 .. 0.44225 
+        j : 0.0632456 0.0630912 .. 0.0630912 0.0632456 0.0630912 .. 0.0630912 
+        k : 0.1
+    Block 6 cell size :
+        i : 0.032031 .. 0.32031 0.03202 .. 0.3202 0.032031 .. 0.32031 0.03202 .. 0.3202 
+        j : 0.0632456 .. 0.0632456
+        k : 0.1
+    Block 7 cell size :
+        i : 0.0314843 .. 0.314843
+        j : 0.0398336 .. 0.398336
+        k : 0.1
+Creating cells
+Creating patches
+
+There are no merge patch pairs edges
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-6 -6 -0.05) (6 6 0.05)
+  nPoints: 20220
+  nCells: 9800
+  nFaces: 39510
+  nInternalFaces: 19290
+----------------
+Patches
+----------------
+  patch 0 (start: 19290 size: 70) name: inlet
+  patch 1 (start: 19360 size: 70) name: outlet
+  patch 2 (start: 19430 size: 200) name: airfoil
+  patch 3 (start: 19630 size: 140) name: top
+  patch 4 (start: 19770 size: 140) name: bottom
+  patch 5 (start: 19910 size: 19600) name: defaultFaces
+
+End
+
