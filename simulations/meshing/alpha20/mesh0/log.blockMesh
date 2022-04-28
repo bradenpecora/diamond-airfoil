@@ -8,11 +8,11 @@
 Build  : 7-49b2b3b8b082
 Exec   : blockMesh
 Date   : Apr 27 2022
-Time   : 14:07:28
-Host   : "c401-011.stampede2.tacc.utexas.edu"
-PID    : 89918
+Time   : 22:27:37
+Host   : "c411-081.stampede2.tacc.utexas.edu"
+PID    : 163604
 I/O    : uncollated
-Case   : /work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh0
+Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh0
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
@@ -21,10 +21,8 @@ allowSystemOperations : Allowing user-supplied system call operations
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 Create time
 
-Deleting polyMesh directory
-    "/work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh0/constant/polyMesh"
 Creating block mesh from
-    "/work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh0/system/blockMeshDict"
+    "/work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh0/system/blockMeshDict"
 No non-linear block edges defined
 No non-planar block faces defined
 Creating topology blocks

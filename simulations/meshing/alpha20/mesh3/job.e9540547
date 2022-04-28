@@ -1,7 +1,0 @@
-
-Currently Loaded Modules:
-  1) intel/18.0.2   2) libfabric/1.7.0   3) impi/18.0.2   4) openfoam/7.0
-
- 
-
-/home1/apps/intel18/impi18_0/OpenFOAM/OpenFOAM-7/bin/tools/RunFunctions: line 53: 189329 Floating point exception$APP_RUN "$@" > log.$LOG_SUFFIX 2>&1

@@ -8,11 +8,11 @@
 Build  : 7-49b2b3b8b082
 Exec   : checkMesh
 Date   : Apr 27 2022
-Time   : 14:07:30
-Host   : "c401-011.stampede2.tacc.utexas.edu"
-PID    : 89924
+Time   : 22:27:38
+Host   : "c411-081.stampede2.tacc.utexas.edu"
+PID    : 163608
 I/O    : uncollated
-Case   : /work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh0
+Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh0
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)

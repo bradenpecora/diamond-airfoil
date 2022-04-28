@@ -12871,11 +12871,13 @@ boundaryField
     }
     top
     {
-        type            symmetryPlane;
+        type            fixedValue;
+        value           uniform 100;
     }
     bottom
     {
-        type            symmetryPlane;
+        type            fixedValue;
+        value           uniform 100;
     }
     defaultFaces
     {

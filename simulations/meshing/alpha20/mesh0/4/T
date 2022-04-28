@@ -12689,7 +12689,7 @@ internalField   nonuniform List<scalar>
 100.354
 100.295
 100.176
-100.03
+100.029
 100.33
 100.306
 100.296
@@ -12729,7 +12729,7 @@ internalField   nonuniform List<scalar>
 100.347
 100.304
 100.212
-100.062
+100.059
 100.352
 100.323
 100.312
@@ -12768,8 +12768,8 @@ internalField   nonuniform List<scalar>
 100.329
 100.326
 100.297
-100.239
-100.132
+100.24
+100.123
 )
 ;
 
@@ -12824,9 +12824,9 @@ boundaryField
 100.327
 100.329
 100.326
-100.296
+100.297
 100.239
-100.131
+100.122
 100.415
 100.505
 100.573
@@ -12871,11 +12871,13 @@ boundaryField
     }
     top
     {
-        type            symmetryPlane;
+        type            fixedValue;
+        value           uniform 100;
     }
     bottom
     {
-        type            symmetryPlane;
+        type            fixedValue;
+        value           uniform 100;
     }
     defaultFaces
     {

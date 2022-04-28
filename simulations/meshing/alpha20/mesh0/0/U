@@ -35,12 +35,14 @@ boundaryField
 
     bottom
     {
-        type            symmetryPlane;
+        type            fixedValue;
+        value           uniform (3 0 0);
     }
 
     top
     {
-        type            symmetryPlane;
+        type            fixedValue;
+        value           uniform (3 0 0);
     }
 
     airfoil
