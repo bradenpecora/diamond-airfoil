@@ -9,49 +9,21 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volScalarField;
-    object      T;
+    class       dictionary;
+    location    "0.12/uniform";
+    object      time;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 0 0 1 0 0 0];
+value           0.12000000000000241;
 
-internalField   uniform 1;
+name            "0.12";
 
-boundaryField
-{
-    inlet
-    {
-        type            fixedValue;
-        value           uniform 1;
-    }
+index           1200;
 
-    outlet
-    {
-        type            inletOutlet;
-        inletValue      uniform 1;
-        value           uniform 1;
-    }
+deltaT          0.0001;
 
-    bottom
-    {
-        type            symmetryPlane;
-    }
+deltaT0         0.0001;
 
-    top
-    {
-        type            symmetryPlane;
-    }
-
-    airfoil
-    {
-        type            zeroGradient;
-    }
-
-    defaultFaces
-    {
-        type            empty;
-    }
-}
 
 // ************************************************************************* //

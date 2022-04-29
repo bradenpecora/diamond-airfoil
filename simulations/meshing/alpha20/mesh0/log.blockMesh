@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 7-49b2b3b8b082
 Exec   : blockMesh
-Date   : Apr 27 2022
-Time   : 14:07:28
-Host   : "c401-011.stampede2.tacc.utexas.edu"
-PID    : 89918
+Date   : Apr 28 2022
+Time   : 19:46:19
+Host   : "c436-131.stampede2.tacc.utexas.edu"
+PID    : 215138
 I/O    : uncollated
 Case   : /work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/meshing/alpha20/mesh0
 nProcs : 1
