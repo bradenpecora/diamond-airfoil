@@ -1,0 +1,6 @@
+/work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/meshing/alpha3/mesh0
+Sat Apr 30 19:45:30 CDT 2022
+Running blockMesh on /work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/meshing/alpha3/mesh0
+Running checkMesh on /work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/meshing/alpha3/mesh0
+Running rhoCentralFoam on /work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/meshing/alpha3/mesh0
+Sat Apr 30 19:46:06 CDT 2022
