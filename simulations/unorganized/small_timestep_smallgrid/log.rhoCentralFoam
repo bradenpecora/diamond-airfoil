@@ -1,0 +1,291 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-49b2b3b8b082
+Exec   : rhoCentralFoam -parallel
+Date   : May 06 2022
+Time   : 16:41:56
+Host   : "c402-133.stampede2.tacc.utexas.edu"
+PID    : 272032
+I/O    : uncollated
+Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
+nProcs : 64
+Slaves : 
+63
+(
+"c402-133.stampede2.tacc.utexas.edu.272033"
+"c402-133.stampede2.tacc.utexas.edu.272034"
+"c402-133.stampede2.tacc.utexas.edu.272035"
+"c402-133.stampede2.tacc.utexas.edu.272036"
+"c402-133.stampede2.tacc.utexas.edu.272037"
+"c402-133.stampede2.tacc.utexas.edu.272038"
+"c402-133.stampede2.tacc.utexas.edu.272039"
+"c402-133.stampede2.tacc.utexas.edu.272040"
+"c402-133.stampede2.tacc.utexas.edu.272041"
+"c402-133.stampede2.tacc.utexas.edu.272042"
+"c402-133.stampede2.tacc.utexas.edu.272043"
+"c402-133.stampede2.tacc.utexas.edu.272044"
+"c402-133.stampede2.tacc.utexas.edu.272045"
+"c402-133.stampede2.tacc.utexas.edu.272046"
+"c402-133.stampede2.tacc.utexas.edu.272047"
+"c402-133.stampede2.tacc.utexas.edu.272048"
+"c402-133.stampede2.tacc.utexas.edu.272049"
+"c402-133.stampede2.tacc.utexas.edu.272050"
+"c402-133.stampede2.tacc.utexas.edu.272051"
+"c402-133.stampede2.tacc.utexas.edu.272052"
+"c402-133.stampede2.tacc.utexas.edu.272053"
+"c402-133.stampede2.tacc.utexas.edu.272054"
+"c402-133.stampede2.tacc.utexas.edu.272055"
+"c402-133.stampede2.tacc.utexas.edu.272056"
+"c402-133.stampede2.tacc.utexas.edu.272057"
+"c402-133.stampede2.tacc.utexas.edu.272058"
+"c402-133.stampede2.tacc.utexas.edu.272059"
+"c402-133.stampede2.tacc.utexas.edu.272060"
+"c402-133.stampede2.tacc.utexas.edu.272061"
+"c402-133.stampede2.tacc.utexas.edu.272062"
+"c402-133.stampede2.tacc.utexas.edu.272063"
+"c402-133.stampede2.tacc.utexas.edu.272064"
+"c402-133.stampede2.tacc.utexas.edu.272065"
+"c402-133.stampede2.tacc.utexas.edu.272066"
+"c402-133.stampede2.tacc.utexas.edu.272067"
+"c402-133.stampede2.tacc.utexas.edu.272068"
+"c402-133.stampede2.tacc.utexas.edu.272069"
+"c402-133.stampede2.tacc.utexas.edu.272070"
+"c402-133.stampede2.tacc.utexas.edu.272071"
+"c402-133.stampede2.tacc.utexas.edu.272072"
+"c402-133.stampede2.tacc.utexas.edu.272073"
+"c402-133.stampede2.tacc.utexas.edu.272074"
+"c402-133.stampede2.tacc.utexas.edu.272075"
+"c402-133.stampede2.tacc.utexas.edu.272076"
+"c402-133.stampede2.tacc.utexas.edu.272077"
+"c402-133.stampede2.tacc.utexas.edu.272078"
+"c402-133.stampede2.tacc.utexas.edu.272079"
+"c402-133.stampede2.tacc.utexas.edu.272080"
+"c402-133.stampede2.tacc.utexas.edu.272081"
+"c402-133.stampede2.tacc.utexas.edu.272082"
+"c402-133.stampede2.tacc.utexas.edu.272083"
+"c402-133.stampede2.tacc.utexas.edu.272084"
+"c402-133.stampede2.tacc.utexas.edu.272085"
+"c402-133.stampede2.tacc.utexas.edu.272086"
+"c402-133.stampede2.tacc.utexas.edu.272087"
+"c402-133.stampede2.tacc.utexas.edu.272088"
+"c402-133.stampede2.tacc.utexas.edu.272089"
+"c402-133.stampede2.tacc.utexas.edu.272090"
+"c402-133.stampede2.tacc.utexas.edu.272091"
+"c402-133.stampede2.tacc.utexas.edu.272092"
+"c402-133.stampede2.tacc.utexas.edu.272093"
+"c402-133.stampede2.tacc.utexas.edu.272094"
+"c402-133.stampede2.tacc.utexas.edu.272095"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+fluxScheme: Kurganov
+
+Starting time loop
+
+deltaT = 0.00111111
+Mean and max Courant Numbers = 0.0861987 0.357711
+Time = 0.00111111
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.22 s  ClockTime = 1 s
+
+deltaT = 0.000592593
+Mean and max Courant Numbers = 0.0459765 0.200946
+Time = 0.0017037
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.23 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0429128 0.192068
+Time = 0.00225679
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.24 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0429127 0.193055
+Time = 0.00280988
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.26 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0429118 0.193512
+Time = 0.00336296
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.28 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0429104 0.192889
+Time = 0.00391605
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.29 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0429087 0.192153
+Time = 0.00446914
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.3 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0429068 0.191379
+Time = 0.00502222
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.32 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0429048 0.190553
+Time = 0.00557531
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.33 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0429027 0.189677
+Time = 0.0061284
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.34 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0429006 0.188752
+Time = 0.00668148
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.36 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0428984 0.187847
+Time = 0.00723457
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.37 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0428961 0.187023
+Time = 0.00778765
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.38 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0428937 0.186337
+Time = 0.00834074
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.39 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+Mean and max Courant Numbers = 0.0428913 0.185824
+Time = 0.00889383
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.41 s  ClockTime = 1 s
+
+deltaT = 0.000553086
+[30] #0  Foam::error::printStack(Foam::Ostream&) at ??:?
+[30] #1  Foam::sigFpe::sigHandler(int) at ??:?
+[30] #2  ? in "/lib64/libpthread.so.0"
+[30] #3  Foam::sqrt(Foam::Field<double>&, Foam::UList<double> const&) at ??:?
+[30] #4  Foam::tmp<Foam::GeometricField<double, Foam::volMesh> > Foam::sqrt<Foam::fvPatchField, Foam::volMesh>(Foam::tmp<Foam::GeometricField<double, Foam::volMesh> > const&) at ??:?
+[30] #5  ? at ??:?
+[30] #6  __libc_start_main in "/lib64/libc.so.6"
+[30] #7  ? at ??:?
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 272062 RUNNING AT c402-133
+=   EXIT CODE: 8
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+   Intel(R) MPI Library troubleshooting guide:
+      https://software.intel.com/node/561764
+===================================================================================
