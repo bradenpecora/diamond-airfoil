@@ -35,12 +35,12 @@ boundaryField
 
     bottom
     {
-        type            symmetryPlane;
+        type            zeroGradient;
     }
 
     top
     {
-        type            symmetryPlane;
+        type            zeroGradient;
     }
 
     airfoil

@@ -274,7 +274,7 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a(' }')
     a(' top')
     a(' {')
-    a('     type symmetryPlane;')
+    a('     type wall;')
     a('     faces')
     a('     (')
     a('         (5 22 21 6)')
@@ -285,7 +285,7 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a(' }')
     a(' bottom')
     a(' {')
-    a('     type symmetryPlane;')
+    a('     type wall;')
     a('     faces')
     a('     (')
     a('         (11 27 28 12)')
@@ -308,16 +308,16 @@ if __name__ == '__main__':
         ht = 6,
         hb = 6,
         alpha = -20,
-        n_foil = 15,
-        n_north = 15,
-        n_east= 10,
-        n_south= 20,
-        n_west=10,
+        n_foil = 120,
+        n_north = 70,
+        n_east= 40,
+        n_south= 60,
+        n_west=40,
         e_foil=1,
-        e_north=5,
-        e_east=2,
-        e_south=5,
-        e_west=2,
+        e_north=20,
+        e_east=10,
+        e_south=17,
+        e_west=15,
         user_name='bsp'
     )
 
