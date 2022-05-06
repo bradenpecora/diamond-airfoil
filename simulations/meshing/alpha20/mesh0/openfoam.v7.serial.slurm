@@ -12,8 +12,8 @@
 ### #SBATCH -p skx-normal          # Queue (partition) name
 
 #SBATCH -N 1               # Total # of nodes
-#SBATCH -n 1               # Total # of mpi tasks
-#SBATCH -t 01:00:00        # Run time (hh:mm:ss)
+#SBATCH -n 64               # Total # of mpi tasks
+#SBATCH -t 03:00:00        # Run time (hh:mm:ss)
 
 #SBATCH -A COE-347-S22       # Allocation name (req'd if you have more than 1)
 
@@ -26,6 +26,6 @@ module list
 pwd
 date
 
-bash ./Allrun
+bash ./AllrunParallel
 
 date

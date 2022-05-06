@@ -121,7 +121,7 @@ boundary
  }
  top
  {
-     type symmetryPlane;
+     type wall;
      faces
      (
          (5 22 21 6)
@@ -132,7 +132,7 @@ boundary
  }
  bottom
  {
-     type symmetryPlane;
+     type wall;
      faces
      (
          (11 27 28 12)

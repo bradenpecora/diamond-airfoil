@@ -16,14 +16,14 @@ FoamFile
 
 dimensions      [1 -1 -2 0 0 0 0];
 
-internalField   uniform 100;
+internalField   uniform 1;
 
 boundaryField
 {
     inlet
     {
         type            fixedValue;
-        value           uniform 100;
+        value           uniform 1;
     }
 
     outlet
@@ -33,12 +33,12 @@ boundaryField
 
     bottom
     {
-        type            symmetryPlane;
+        type            slip;
     }
 
     top
     {
-        type            symmetryPlane;
+        type            slip;
     }
 
     airfoil

@@ -38,15 +38,15 @@ FoamFile
     }
     top
     {
-        type            symmetryPlane;
-        inGroups        List<word> 1(symmetryPlane);
+        type            wall;
+        inGroups        List<word> 1(wall);
         nFaces          170;
         startFace       25515;
     }
     bottom
     {
-        type            symmetryPlane;
-        inGroups        List<word> 1(symmetryPlane);
+        type            wall;
+        inGroups        List<word> 1(wall);
         nFaces          170;
         startFace       25685;
     }
