@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : blockMesh
 Date   : May 06 2022
-Time   : 16:48:11
-Host   : "c451-081.stampede2.tacc.utexas.edu"
-PID    : 276147
+Time   : 16:59:55
+Host   : "c416-011.stampede2.tacc.utexas.edu"
+PID    : 264968
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
 nProcs : 1
@@ -49,16 +49,16 @@ Creating merge list .
 Creating polyMesh from blockMesh
 Creating points with scale 1
     Block 0 cell size :
-        i : 0.0201348 .. 0.201348
+        i : 0.0101205 .. 0.101205
         j : 0.0156765 .. 0.31353
         k : 0.1
     Block 1 cell size :
-        i : 0.0156765 .. 0.31353 0.0156399 .. 0.312799 0.0156765 .. 0.31353 0.0156399 .. 0.312799 
-        j : 0.0263523 .. 0.0263523 0.0263296 .. 0.0263296 0.0263523 .. 0.0263523 0.0263296 .. 0.0263296 
+        i : 0.0156765 .. 0.31353 0.0156582 .. 0.313164 0.0156765 .. 0.31353 0.0156582 .. 0.313164 
+        j : 0.0131762 .. 0.0131762 0.0131648 .. 0.0131648 0.0131762 .. 0.0131762 0.0131648 .. 0.0131648 
         k : 0.1
     Block 2 cell size :
-        i : 0.0112905 .. 0.22581 0.0112889 .. 0.225778 0.0112905 .. 0.22581 0.0112889 .. 0.225778 
-        j : 0.0263523 .. 0.0263523
+        i : 0.0112905 .. 0.22581 0.0112897 .. 0.225794 0.0112905 .. 0.22581 0.0112897 .. 0.225794 
+        j : 0.0131762 .. 0.0131762
         k : 0.1
     Block 3 cell size :
         i : 0.0110978 .. 0.221956
@@ -69,16 +69,16 @@ Creating points with scale 1
         j : 0.0205288 .. 0.348989
         k : 0.1
     Block 5 cell size :
-        i : 0.0205288 .. 0.348989 0.0204809 .. 0.348175 0.0205288 .. 0.348989 0.0204809 .. 0.348175 
-        j : 0.0263523 .. 0.0263523 0.0263226 .. 0.0263226 0.0263523 .. 0.0263523 0.0263226 .. 0.0263226 
+        i : 0.0205288 .. 0.348989 0.0205048 .. 0.348582 0.0205288 .. 0.348989 0.0205048 .. 0.348582 
+        j : 0.0131762 .. 0.0131762 0.0131613 .. 0.0131613 0.0131762 .. 0.0131762 0.0131613 .. 0.0131613 
         k : 0.1
     Block 6 cell size :
-        i : 0.0147852 .. 0.251349 0.0147831 .. 0.251313 0.0147852 .. 0.251349 0.0147831 .. 0.251313 
-        j : 0.0263523 .. 0.0263523
+        i : 0.0147852 .. 0.251349 0.0147842 .. 0.251331 0.0147852 .. 0.251349 0.0147842 .. 0.251331 
+        j : 0.0131762 .. 0.0131762
         k : 0.1
     Block 7 cell size :
         i : 0.0145329 .. 0.247059
-        j : 0.0201348 .. 0.201348
+        j : 0.0101205 .. 0.101205
         k : 0.1
 Creating cells
 Creating patches
@@ -90,19 +90,19 @@ Writing polyMesh
 Mesh Information
 ----------------
   boundingBox: (-6 -6 -0.05) (6 6 0.05)
-  nPoints: 84580
-  nCells: 41600
-  nFaces: 167090
-  nInternalFaces: 82510
+  nPoints: 158420
+  nCells: 78000
+  nFaces: 313210
+  nInternalFaces: 154790
 ----------------
 Patches
 ----------------
-  patch 0 (start: 82510 size: 130) name: inlet
-  patch 1 (start: 82640 size: 130) name: outlet
-  patch 2 (start: 82770 size: 480) name: airfoil
-  patch 3 (start: 83250 size: 320) name: top
-  patch 4 (start: 83570 size: 320) name: bottom
-  patch 5 (start: 83890 size: 83200) name: defaultFaces
+  patch 0 (start: 154790 size: 130) name: inlet
+  patch 1 (start: 154920 size: 130) name: outlet
+  patch 2 (start: 155050 size: 960) name: airfoil
+  patch 3 (start: 156010 size: 600) name: top
+  patch 4 (start: 156610 size: 600) name: bottom
+  patch 5 (start: 157210 size: 156000) name: defaultFaces
 
 End
 
