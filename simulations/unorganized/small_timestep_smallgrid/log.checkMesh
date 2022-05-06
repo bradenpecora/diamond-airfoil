@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : checkMesh
 Date   : May 06 2022
-Time   : 17:00:03
-Host   : "c416-011.stampede2.tacc.utexas.edu"
-PID    : 264975
+Time   : 17:29:07
+Host   : "c403-032.stampede2.tacc.utexas.edu"
+PID    : 16886
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
 nProcs : 1
@@ -68,15 +68,15 @@ Checking geometry...
     Mesh has 2 geometric (non-empty/wedge) directions (1 1 0)
     Mesh has 2 solution (non-empty) directions (1 1 0)
     All edges aligned with or perpendicular to non-empty directions.
-    Boundary openness (2.47738e-18 -1.91944e-17 5.40679e-16) OK.
-    Max cell openness = 2.16973e-16 OK.
-    Max aspect ratio = 33.8132 OK.
-    Minimum face area = 0.000116624. Maximum face area = 0.079406.  Face area magnitudes OK.
-    Min volume = 1.16624e-05. Max volume = 0.0079406.  Total volume = 13.8.  Cell volumes OK.
-    Mesh non-orthogonality Max: 38.4038 average: 19.1404
+    Boundary openness (-1.29864e-17 3.65241e-17 -6.60151e-16) OK.
+    Max cell openness = 2.19445e-16 OK.
+    Max aspect ratio = 30.9797 OK.
+    Minimum face area = 0.000134355. Maximum face area = 0.079406.  Face area magnitudes OK.
+    Min volume = 1.34355e-05. Max volume = 0.0079406.  Total volume = 14.25.  Cell volumes OK.
+    Mesh non-orthogonality Max: 24.7393 average: 14.2383
     Non-orthogonality check OK.
     Face pyramids OK.
-    Max skewness = 0.967748 OK.
+    Max skewness = 0.685163 OK.
     Coupled point location match (average 0) OK.
 
 Mesh OK.

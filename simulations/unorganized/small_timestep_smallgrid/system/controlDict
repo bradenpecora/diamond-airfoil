@@ -15,21 +15,23 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     rhoCentralFoam;
+application     icoFoam;
 
-startFrom       latestTime;
+startFrom       startTime;
 
 startTime       0;
 
 stopAt          endTime;
 
-endTime         7.0 ;
+// make sure to modify the 3 entries below before
+// attempting to execute any OpenFOAM utility.
+// See README for details
 
-deltaT          0.00001;
-
-writeControl    adjustableRunTime;
-
+endTime         7;
+deltaT          0.002;
 writeInterval   0.01;
+
+writeControl    runTime;
 
 purgeWrite      0;
 
@@ -44,12 +46,6 @@ timeFormat      general;
 timePrecision   6;
 
 runTimeModifiable true;
-
-adjustTimeStep  yes;
-
-maxCo           0.2;
-
-maxDeltaT       1;
 
 // ************************************************************************* //
 

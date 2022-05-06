@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : reconstructPar
 Date   : May 06 2022
-Time   : 17:00:51
-Host   : "c416-011.stampede2.tacc.utexas.edu"
-PID    : 265257
+Time   : 17:29:52
+Host   : "c403-032.stampede2.tacc.utexas.edu"
+PID    : 17164
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
 nProcs : 1
@@ -65,6 +65,36 @@ No point fields
 
 No lagrangian fields
 
+Time = 0.03
 
-End
+Reconstructing FV fields
 
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.04
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
