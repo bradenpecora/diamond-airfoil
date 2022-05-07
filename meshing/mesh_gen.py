@@ -302,21 +302,21 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
 if __name__ == '__main__':
     output = main(
         c = 3,
-        t = 0.25,
+        t = 1,
         lf = 6,
         lw = 6,
         ht = 6,
         hb = 6,
         alpha = -20,
         n_foil = 480,
-        n_north = 150,
+        n_north = 200,
         n_east= 80,
         n_south= 150,
         n_west=40,
         e_foil=1,
-        e_north=20,
+        e_north=50,
         e_east=10,
-        e_south=17,
+        e_south=50,
         e_west=15,
         user_name='bsp'
     )
