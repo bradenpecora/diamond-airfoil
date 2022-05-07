@@ -1,7 +1,0 @@
-/work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
-Fri May  6 17:28:59 CDT 2022
-Running blockMesh on /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
-Running checkMesh on /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
-Running decomposePar on /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
-Running rhoCentralFoam in parallel on /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid using 64 processes
-Running reconstructPar on /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
