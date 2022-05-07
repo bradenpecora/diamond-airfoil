@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : decomposePar
 Date   : May 06 2022
-Time   : 21:08:33
-Host   : "c409-091.stampede2.tacc.utexas.edu"
-PID    : 53075
+Time   : 23:08:17
+Host   : "c402-044.stampede2.tacc.utexas.edu"
+PID    : 2622
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/small_timestep_smallgrid
 nProcs : 1
