@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
 
+NUMBER_OF_NODES_ON_Z_PLANE = 24
 class Vertex:
     def __init__(self, x,y,z, global_i=None):
         self.x = x
@@ -15,7 +16,7 @@ class Vertex:
     def __str__(self):
         return '    ( {} {} {}) // {}'.format(self.x,self.y,self.z,self.global_i)
     def flip_z(self):
-        return Vertex(self.x, self.y, -1*self.z, self.global_i + 16)
+        return Vertex(self.x, self.y, -1*self.z, self.global_i + NUMBER_OF_NODES_ON_Z_PLANE)
     def plot(self, vert2):
         plt.plot([self.x, vert2.x], [self.y, vert2.y], 'o-k')
     def rotate(self, alpha):
@@ -91,16 +92,20 @@ class Index:
 
 def generate_faces(n):
     faces = []
-    append = lambda v0, v1, v2, v3: faces.append(Face(n[v0],n[v1],n[v2],n[v3]))
+    a = lambda v0, v1, v2, v3: faces.append(Face(n[v0],n[v1],n[v2],n[v3])) #append
 
-    append(0,4,5,6)
-    append(0,6,7,1)
-    append(1,7,8,2)
-    append(2,8,9,10)
-    append(2,10,11,12)
-    append(2,12,13,3)
-    append(3,13,14,0)
-    append(0,14,15,4)
+    a(0,8,9,10)
+    a(0,10,11,1)
+    a(12,2,1,11)
+    a(2,12,13,3)
+    a(14,4,3,13)
+    a(14,15,16,4)
+    a(4,16,17,18)
+    a(4,18,19,5)
+    a(20,6,5,19)
+    a(6,20,21,7)
+    a(22,0,7,21)
+    a(22,23,8,0)
 
     return faces
 
@@ -116,29 +121,36 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     # generate front nodes
     nodes_index = Index()
     nodes = []
-    create_node = lambda x,y,: nodes.append(Vertex(x,y,dz,nodes_index.i()))
+    cn = lambda x,y,: nodes.append(Vertex(x,y,dz,nodes_index.i())) # "create node"
 
-    # generate airfoil and rotate by alpha
-    create_node(c, 0)#0
-    create_node(0,t)#1
-    create_node(-c,0)#2
-    create_node(0,-t)#3
+    # generate airfoil, rotate by alpha
+    cn(c,0)
+    cn(c/2,t/2)
+    cn(0,t)
+    cn(-c/2,t/2)
+    cn(-c,0)
+    cn(-c/2,-t/2)
+    cn(0,-t)
+    cn(c/2,-t/2)
     for node in nodes:
         node.rotate(alpha)
 
-    # generate outer nodes
-    create_node(lw, nodes[0].y) #4
-    create_node(lw, ht) #5
-    create_node(nodes[0].x, ht) #6
-    create_node(nodes[1].x, ht) #7
-    create_node(nodes[2].x, ht) #8
-    create_node(lf, ht) #9
-    create_node(lf, nodes[2].y) #10
-    create_node(lf,hb) #11
-    create_node(nodes[2].x, hb) #12
-    create_node(nodes[3].x, hb) #13
-    create_node(nodes[0].x, hb) #14
-    create_node(lw,hb) #15
+    cn(lw,nodes[0].y)
+    cn(lw,ht)
+    cn(nodes[0].x,ht)
+    cn(nodes[1].x,ht)
+    cn(nodes[2].x,ht)
+    cn(nodes[3].x,ht)
+    cn(nodes[4].x,ht)
+    cn(lf,ht)
+    cn(lf,nodes[4].y)
+    cn(lf,hb)
+    cn(nodes[4].x,hb)
+    cn(nodes[5].x,hb)
+    cn(nodes[6].x,hb)
+    cn(nodes[7].x,hb)
+    cn(nodes[8].x,hb)
+    cn(lw,hb)
 
     nodes += [node.flip_z() for node in nodes]
 
@@ -160,34 +172,54 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     blocks[1].ex2 = e_foil
 
     blocks[2].nx1 = n_north
-    blocks[2].ex1 = e_north
+    blocks[2].ex1 = 1/e_north
     blocks[2].nx2 = n_foil
     blocks[2].ex2 = e_foil
 
     blocks[3].nx1 = n_north
     blocks[3].ex1 = e_north
-    blocks[3].nx2 = n_west
-    blocks[3].ex2 = e_west
+    blocks[3].nx2 = n_foil
+    blocks[3].ex2 = e_foil
 
-    blocks[4].nx1 = n_west
-    blocks[4].ex1 = e_west
-    blocks[4].nx2 = n_south
-    blocks[4].ex2 = e_south
+    blocks[4].nx1 = n_north
+    blocks[4].ex1 = 1/e_north
+    blocks[4].nx2 = n_foil
+    blocks[4].ex2 = e_foil
 
-    blocks[5].nx1 = n_south
-    blocks[5].ex1 = e_south
-    blocks[5].nx2 = n_foil
-    blocks[5].ex2 = e_foil
+    blocks[5].nx1 = n_west
+    blocks[5].ex1 = e_west
+    blocks[5].nx2 = n_south
+    blocks[5].ex2 = 1/e_south
 
-    blocks[6].nx1 = n_south
-    blocks[6].ex1 = e_south
-    blocks[6].nx2 = n_foil
-    blocks[6].ex2 = e_foil
+    blocks[6].nx1 = n_west
+    blocks[6].ex1 = e_west
+    blocks[6].nx2 = n_south
+    blocks[6].ex2 = e_south
 
     blocks[7].nx1 = n_south
     blocks[7].ex1 = e_south
-    blocks[7].nx2 = n_east
-    blocks[7].ex2 = e_east
+    blocks[7].nx2 = n_foil
+    blocks[7].ex2 = e_foil
+
+    blocks[8].nx1 = n_south
+    blocks[8].ex1 = 1/e_south
+    blocks[8].nx2 = n_foil
+    blocks[8].ex2 = e_foil
+    
+    blocks[9].nx1 = n_south
+    blocks[9].ex1 = e_south
+    blocks[9].nx2 = n_foil
+    blocks[9].ex2 = e_foil
+
+    blocks[10].nx1 = n_south
+    blocks[10].ex1 = 1/e_south
+    blocks[10].nx2 = n_foil
+    blocks[10].ex2 = e_foil
+
+    blocks[11].nx1 = n_east
+    blocks[11].ex1 = e_east
+    blocks[11].nx2 = n_south
+    blocks[11].ex2 = 1/e_south
 
     # Create output
     output = ['\n']
@@ -248,8 +280,8 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type patch;')
     a('     faces')
     a('     (')
-    a('         (9 25 26 10)')
-    a('         (10 26 27 11)')
+    a('         (15 39 40 16)')
+    a('         (16 40 41 17)')
     a('     );')
     a(' }')
     a(' outlet')
@@ -257,8 +289,8 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type patch;')
     a('     faces')
     a('     (')
-    a('         (15 31 20 4)')
-    a('         (4 20 21 5)')
+    a('         (23 47 32 8)')
+    a('         (8 32 33 9)')
     a('     );')
     a(' }')
     a(' airfoil')
@@ -266,10 +298,14 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type wall;')
     a('     faces')
     a('     (')
-    a('         (0 16 17 1)')
-    a('         (1 17 18 2)')
+    a('         (0 24 25 1)')
+    a('         (1 25 26 2)')
     a('         (2 18 19 3)')
-    a('         (3 19 16 0)')
+    a('         (3 19 20 4)')
+    a('         (4 20 21 5)')
+    a('         (5 21 22 5)')
+    a('         (6 22 23 6)')
+    a('         (7 23 24 7)')
     a('     );')
     a(' }')
     a(' top')
@@ -277,10 +313,13 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type wall;')
     a('     faces')
     a('     (')
-    a('         (5 22 21 6)')
-    a('         (6 23 22 7)')
-    a('         (7 24 23 8)')
-    a('         (8 25 24 9)')
+    a('         (9 34 33 10)')
+    a('         (10 35 34 11)')
+    a('         (11 36 35 12)')
+    a('         (12 37 36 13)')
+    a('         (13 38 37 14)')
+    a('         (14 39 38 15)')
+    a('         (15 40 39 16)')
     a('     );')
     a(' }')
     a(' bottom')
@@ -288,10 +327,13 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     a('     type wall;')
     a('     faces')
     a('     (')
-    a('         (11 27 28 12)')
-    a('         (12 28 29 13)')
-    a('         (13 29 30 14)')
-    a('         (14 30 31 15)')
+    a('         (17 41 42 18)')
+    a('         (18 42 43 19)')
+    a('         (19 43 44 20)')
+    a('         (20 44 45 21)')
+    a('         (21 45 46 22)')
+    a('         (22 46 47 23)')
+    a('         (23 47 48 24)')
     a('     );')
     a(' }')
     a('')
