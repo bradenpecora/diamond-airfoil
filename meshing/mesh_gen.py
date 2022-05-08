@@ -149,7 +149,7 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
     cn(nodes[5].x,hb)
     cn(nodes[6].x,hb)
     cn(nodes[7].x,hb)
-    cn(nodes[8].x,hb)
+    cn(nodes[0].x,hb)
     cn(lw,hb)
 
     nodes += [node.flip_z() for node in nodes]
@@ -350,12 +350,12 @@ if __name__ == '__main__':
         ht = 6,
         hb = 6,
         alpha = -20,
-        n_foil = 480,
-        n_north = 200,
+        n_foil = 200,
+        n_north = 150,
         n_east= 80,
         n_south= 150,
         n_west=40,
-        e_foil=1,
+        e_foil=10,
         e_north=50,
         e_east=10,
         e_south=50,
