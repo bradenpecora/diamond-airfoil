@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : decomposePar
 Date   : May 09 2022
-Time   : 14:49:02
-Host   : "c469-093.stampede2.tacc.utexas.edu"
-PID    : 227832
+Time   : 14:55:01
+Host   : "c468-101.stampede2.tacc.utexas.edu"
+PID    : 105389
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
 nProcs : 1
@@ -47,7 +47,7 @@ Calculating distribution of cells
 
 Selecting decompositionMethod hierarchical
 
-Finished decomposition in 0.16 s
+Finished decomposition in 0.15 s
 
 Calculating original mesh data
 

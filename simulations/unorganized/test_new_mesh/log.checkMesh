@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : checkMesh
 Date   : May 09 2022
-Time   : 14:48:21
-Host   : "c469-093.stampede2.tacc.utexas.edu"
-PID    : 227797
+Time   : 14:54:19
+Host   : "c468-101.stampede2.tacc.utexas.edu"
+PID    : 105351
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
 nProcs : 1
