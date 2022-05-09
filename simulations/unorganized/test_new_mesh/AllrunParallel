@@ -1,0 +1,16 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # Run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+runApplication blockMesh # create the mesh
+runApplication checkMesh # check the mesh
+
+runApplication decomposePar # decompose the domain
+
+runParallel rhoCentralFoam # run the solver 
+
+runApplication reconstructPar # reconstruct the solution
+
+#------------------------------------------------------------------------------
