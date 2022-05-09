@@ -8,78 +8,78 @@
 Build  : 7-49b2b3b8b082
 Exec   : rhoCentralFoam -parallel
 Date   : May 09 2022
-Time   : 16:30:36
-Host   : "c436-082.stampede2.tacc.utexas.edu"
-PID    : 217913
+Time   : 18:47:13
+Host   : "c413-103.stampede2.tacc.utexas.edu"
+PID    : 224346
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
 nProcs : 64
 Slaves : 
 63
 (
-"c436-082.stampede2.tacc.utexas.edu.217914"
-"c436-082.stampede2.tacc.utexas.edu.217915"
-"c436-082.stampede2.tacc.utexas.edu.217916"
-"c436-082.stampede2.tacc.utexas.edu.217917"
-"c436-082.stampede2.tacc.utexas.edu.217918"
-"c436-082.stampede2.tacc.utexas.edu.217919"
-"c436-082.stampede2.tacc.utexas.edu.217920"
-"c436-082.stampede2.tacc.utexas.edu.217921"
-"c436-082.stampede2.tacc.utexas.edu.217922"
-"c436-082.stampede2.tacc.utexas.edu.217923"
-"c436-082.stampede2.tacc.utexas.edu.217924"
-"c436-082.stampede2.tacc.utexas.edu.217925"
-"c436-082.stampede2.tacc.utexas.edu.217926"
-"c436-082.stampede2.tacc.utexas.edu.217927"
-"c436-082.stampede2.tacc.utexas.edu.217928"
-"c436-082.stampede2.tacc.utexas.edu.217929"
-"c436-082.stampede2.tacc.utexas.edu.217930"
-"c436-082.stampede2.tacc.utexas.edu.217931"
-"c436-082.stampede2.tacc.utexas.edu.217932"
-"c436-082.stampede2.tacc.utexas.edu.217933"
-"c436-082.stampede2.tacc.utexas.edu.217934"
-"c436-082.stampede2.tacc.utexas.edu.217935"
-"c436-082.stampede2.tacc.utexas.edu.217936"
-"c436-082.stampede2.tacc.utexas.edu.217937"
-"c436-082.stampede2.tacc.utexas.edu.217938"
-"c436-082.stampede2.tacc.utexas.edu.217939"
-"c436-082.stampede2.tacc.utexas.edu.217940"
-"c436-082.stampede2.tacc.utexas.edu.217941"
-"c436-082.stampede2.tacc.utexas.edu.217942"
-"c436-082.stampede2.tacc.utexas.edu.217943"
-"c436-082.stampede2.tacc.utexas.edu.217944"
-"c436-082.stampede2.tacc.utexas.edu.217945"
-"c436-082.stampede2.tacc.utexas.edu.217946"
-"c436-082.stampede2.tacc.utexas.edu.217947"
-"c436-082.stampede2.tacc.utexas.edu.217948"
-"c436-082.stampede2.tacc.utexas.edu.217949"
-"c436-082.stampede2.tacc.utexas.edu.217950"
-"c436-082.stampede2.tacc.utexas.edu.217951"
-"c436-082.stampede2.tacc.utexas.edu.217952"
-"c436-082.stampede2.tacc.utexas.edu.217953"
-"c436-082.stampede2.tacc.utexas.edu.217954"
-"c436-082.stampede2.tacc.utexas.edu.217955"
-"c436-082.stampede2.tacc.utexas.edu.217956"
-"c436-082.stampede2.tacc.utexas.edu.217957"
-"c436-082.stampede2.tacc.utexas.edu.217958"
-"c436-082.stampede2.tacc.utexas.edu.217959"
-"c436-082.stampede2.tacc.utexas.edu.217960"
-"c436-082.stampede2.tacc.utexas.edu.217961"
-"c436-082.stampede2.tacc.utexas.edu.217962"
-"c436-082.stampede2.tacc.utexas.edu.217964"
-"c436-082.stampede2.tacc.utexas.edu.217965"
-"c436-082.stampede2.tacc.utexas.edu.217966"
-"c436-082.stampede2.tacc.utexas.edu.217967"
-"c436-082.stampede2.tacc.utexas.edu.217968"
-"c436-082.stampede2.tacc.utexas.edu.217969"
-"c436-082.stampede2.tacc.utexas.edu.217970"
-"c436-082.stampede2.tacc.utexas.edu.217971"
-"c436-082.stampede2.tacc.utexas.edu.217972"
-"c436-082.stampede2.tacc.utexas.edu.217973"
-"c436-082.stampede2.tacc.utexas.edu.217974"
-"c436-082.stampede2.tacc.utexas.edu.217975"
-"c436-082.stampede2.tacc.utexas.edu.217976"
-"c436-082.stampede2.tacc.utexas.edu.217977"
+"c413-103.stampede2.tacc.utexas.edu.224347"
+"c413-103.stampede2.tacc.utexas.edu.224348"
+"c413-103.stampede2.tacc.utexas.edu.224349"
+"c413-103.stampede2.tacc.utexas.edu.224350"
+"c413-103.stampede2.tacc.utexas.edu.224351"
+"c413-103.stampede2.tacc.utexas.edu.224352"
+"c413-103.stampede2.tacc.utexas.edu.224353"
+"c413-103.stampede2.tacc.utexas.edu.224354"
+"c413-103.stampede2.tacc.utexas.edu.224355"
+"c413-103.stampede2.tacc.utexas.edu.224356"
+"c413-103.stampede2.tacc.utexas.edu.224357"
+"c413-103.stampede2.tacc.utexas.edu.224358"
+"c413-103.stampede2.tacc.utexas.edu.224359"
+"c413-103.stampede2.tacc.utexas.edu.224360"
+"c413-103.stampede2.tacc.utexas.edu.224361"
+"c413-103.stampede2.tacc.utexas.edu.224362"
+"c413-103.stampede2.tacc.utexas.edu.224363"
+"c413-103.stampede2.tacc.utexas.edu.224364"
+"c413-103.stampede2.tacc.utexas.edu.224365"
+"c413-103.stampede2.tacc.utexas.edu.224366"
+"c413-103.stampede2.tacc.utexas.edu.224367"
+"c413-103.stampede2.tacc.utexas.edu.224368"
+"c413-103.stampede2.tacc.utexas.edu.224369"
+"c413-103.stampede2.tacc.utexas.edu.224370"
+"c413-103.stampede2.tacc.utexas.edu.224371"
+"c413-103.stampede2.tacc.utexas.edu.224372"
+"c413-103.stampede2.tacc.utexas.edu.224373"
+"c413-103.stampede2.tacc.utexas.edu.224374"
+"c413-103.stampede2.tacc.utexas.edu.224375"
+"c413-103.stampede2.tacc.utexas.edu.224376"
+"c413-103.stampede2.tacc.utexas.edu.224377"
+"c413-103.stampede2.tacc.utexas.edu.224378"
+"c413-103.stampede2.tacc.utexas.edu.224379"
+"c413-103.stampede2.tacc.utexas.edu.224380"
+"c413-103.stampede2.tacc.utexas.edu.224381"
+"c413-103.stampede2.tacc.utexas.edu.224382"
+"c413-103.stampede2.tacc.utexas.edu.224383"
+"c413-103.stampede2.tacc.utexas.edu.224384"
+"c413-103.stampede2.tacc.utexas.edu.224385"
+"c413-103.stampede2.tacc.utexas.edu.224386"
+"c413-103.stampede2.tacc.utexas.edu.224387"
+"c413-103.stampede2.tacc.utexas.edu.224388"
+"c413-103.stampede2.tacc.utexas.edu.224389"
+"c413-103.stampede2.tacc.utexas.edu.224390"
+"c413-103.stampede2.tacc.utexas.edu.224391"
+"c413-103.stampede2.tacc.utexas.edu.224392"
+"c413-103.stampede2.tacc.utexas.edu.224393"
+"c413-103.stampede2.tacc.utexas.edu.224394"
+"c413-103.stampede2.tacc.utexas.edu.224395"
+"c413-103.stampede2.tacc.utexas.edu.224396"
+"c413-103.stampede2.tacc.utexas.edu.224397"
+"c413-103.stampede2.tacc.utexas.edu.224398"
+"c413-103.stampede2.tacc.utexas.edu.224399"
+"c413-103.stampede2.tacc.utexas.edu.224400"
+"c413-103.stampede2.tacc.utexas.edu.224401"
+"c413-103.stampede2.tacc.utexas.edu.224402"
+"c413-103.stampede2.tacc.utexas.edu.224403"
+"c413-103.stampede2.tacc.utexas.edu.224404"
+"c413-103.stampede2.tacc.utexas.edu.224405"
+"c413-103.stampede2.tacc.utexas.edu.224406"
+"c413-103.stampede2.tacc.utexas.edu.224407"
+"c413-103.stampede2.tacc.utexas.edu.224408"
+"c413-103.stampede2.tacc.utexas.edu.224409"
 )
 
 Pstream initialized with:
@@ -119,127 +119,294 @@ fluxScheme: Kurganov
 
 Starting time loop
 
-deltaT = 6e-05
-Mean and max Courant Numbers = 0.0194526 0.386206
-Time = 6e-05
+Mean and max Courant Numbers = 0.0198809 0.404417
+Time = 5e-05
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.5 s  ClockTime = 0 s
+ExecutionTime = 0.63 s  ClockTime = 1 s
 
-deltaT = 7.2e-05
-Mean and max Courant Numbers = 0.0233434 0.476428
-Time = 0.000132
-
-diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.56 s  ClockTime = 0 s
-
-deltaT = 8.64e-05
-Mean and max Courant Numbers = 0.0280124 0.584487
-Time = 0.0002184
+Mean and max Courant Numbers = 0.0198812 0.417466
+Time = 0.0001
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.61 s  ClockTime = 0 s
+ExecutionTime = 0.71 s  ClockTime = 1 s
 
-deltaT = 0.00010368
-Mean and max Courant Numbers = 0.0336145 0.709708
-Time = 0.00032208
-
-diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.66 s  ClockTime = 0 s
-
-deltaT = 0.000121211
-Mean and max Courant Numbers = 0.0392974 0.837189
-Time = 0.000443291
+Mean and max Courant Numbers = 0.0198813 0.426566
+Time = 0.00015
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.73 s  ClockTime = 0 s
+ExecutionTime = 0.79 s  ClockTime = 1 s
 
-deltaT = 0.000138585
-Mean and max Courant Numbers = 0.0449291 0.95754
-Time = 0.000581875
-
-diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.78 s  ClockTime = 0 s
-
-deltaT = 0.000155952
-Mean and max Courant Numbers = 0.0505582 1.06967
-Time = 0.000737827
+Mean and max Courant Numbers = 0.0198813 0.431407
+Time = 0.0002
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.84 s  ClockTime = 0 s
+ExecutionTime = 0.88 s  ClockTime = 1 s
 
-deltaT = 0.000173447
-Mean and max Courant Numbers = 0.056228 1.2054
-Time = 0.000911275
-
-diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.9 s  ClockTime = 1 s
-
-deltaT = 0.00017267
-Mean and max Courant Numbers = 0.0559737 1.1976
-Time = 0.00108394
+Mean and max Courant Numbers = 0.0198811 0.434138
+Time = 0.00025
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 1.11 s  ClockTime = 1 s
+ExecutionTime = 0.97 s  ClockTime = 1 s
 
-deltaT = 0.000173016
-Mean and max Courant Numbers = 0.0560833 1.20336
-Time = 0.00125696
-
-diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 1.18 s  ClockTime = 1 s
-
-deltaT = 0.000172533
-Mean and max Courant Numbers = 0.0559241 1.18707
-Time = 0.00142949
+Mean and max Courant Numbers = 0.019881 0.435173
+Time = 0.0003
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 1.24 s  ClockTime = 1 s
+ExecutionTime = 1.06 s  ClockTime = 1 s
 
-deltaT = 0.000174412
-Mean and max Courant Numbers = 0.0565299 1.1815
-Time = 0.00160391
+Mean and max Courant Numbers = 0.0198808 0.435101
+Time = 0.00035
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 1.3 s  ClockTime = 1 s
+ExecutionTime = 1.14 s  ClockTime = 1 s
 
-deltaT = 0.000177144
+Mean and max Courant Numbers = 0.0198806 0.434211
+Time = 0.0004
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 1.23 s  ClockTime = 1 s
+
+Mean and max Courant Numbers = 0.0198803 0.433085
+Time = 0.00045
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 1.31 s  ClockTime = 1 s
+
+Mean and max Courant Numbers = 0.0198801 0.43225
+Time = 0.0005
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 1.4 s  ClockTime = 1 s
+
+Mean and max Courant Numbers = 0.0198798 0.431949
+Time = 0.00055
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 1.48 s  ClockTime = 2 s
+
+Mean and max Courant Numbers = 0.0198795 0.432063
+Time = 0.0006
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 1.57 s  ClockTime = 2 s
+
+Mean and max Courant Numbers = 0.0198792 0.432333
+Time = 0.00065
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 1.66 s  ClockTime = 2 s
+
+Mean and max Courant Numbers = 0.019879 0.432535
+Time = 0.0007
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 1.75 s  ClockTime = 2 s
+
+Mean and max Courant Numbers = 0.0198787 0.432548
+Time = 0.00075
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 1.83 s  ClockTime = 2 s
+
+Mean and max Courant Numbers = 0.0198784 0.432347
+Time = 0.0008
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 1.92 s  ClockTime = 2 s
+
+Mean and max Courant Numbers = 0.0198781 0.431969
+Time = 0.00085
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 2.01 s  ClockTime = 2 s
+
+Mean and max Courant Numbers = 0.0198778 0.431481
+Time = 0.0009
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 2.09 s  ClockTime = 2 s
+
+Mean and max Courant Numbers = 0.0198775 0.430954
+Time = 0.00095
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 2.18 s  ClockTime = 2 s
+
+Mean and max Courant Numbers = 0.0198771 0.430454
+Time = 0.001
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 2.5 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.0198768 0.430029
+Time = 0.00105
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 2.59 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.0198764 0.429704
+Time = 0.0011
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 2.67 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.019876 0.429477
+Time = 0.00115
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 2.75 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.0198756 0.429331
+Time = 0.0012
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 2.84 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.0198752 0.429234
+Time = 0.00125
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 2.93 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.0198749 0.429156
+Time = 0.0013
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 3.02 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.0198745 0.429067
+Time = 0.00135
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 3.1 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.0198741 0.428949
+Time = 0.0014
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 3.19 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.0198737 0.428789
+Time = 0.00145
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 3.28 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.0198733 0.428583
+Time = 0.0015
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 3.37 s  ClockTime = 3 s
+
+Mean and max Courant Numbers = 0.019873 0.428336
+Time = 0.00155
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 3.45 s  ClockTime = 4 s
+
+Mean and max Courant Numbers = 0.0198726 0.428052
+Time = 0.0016
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 3.54 s  ClockTime = 4 s
+
 [20] #0  Foam::error::printStack(Foam::Ostream&) at ??:?
 [20] #1  Foam::sigFpe::sigHandler(int) at ??:?
 [20] #2  ? in "/lib64/libpthread.so.0"
@@ -251,7 +418,7 @@ deltaT = 0.000177144
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 217933 RUNNING AT c436-082
+=   PID 224366 RUNNING AT c413-103
 =   EXIT CODE: 8
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES

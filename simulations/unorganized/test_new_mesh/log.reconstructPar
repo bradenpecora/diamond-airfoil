@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : reconstructPar
 Date   : May 09 2022
-Time   : 16:30:39
-Host   : "c436-082.stampede2.tacc.utexas.edu"
-PID    : 218126
+Time   : 18:47:18
+Host   : "c413-103.stampede2.tacc.utexas.edu"
+PID    : 224561
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
 nProcs : 1
@@ -25,7 +25,7 @@ Create time
 
 Reconstructing fields for mesh region0
 
-Time = 0.00108394
+Time = 0.001
 
 Reconstructing FV fields
 
@@ -38,13 +38,3 @@ Reconstructing FV fields
     Reconstructing volVectorFields
 
         U
-
-Reconstructing point fields
-
-No point fields
-
-No lagrangian fields
-
-
-End
-

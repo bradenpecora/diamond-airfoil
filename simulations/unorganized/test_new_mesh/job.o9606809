@@ -1,0 +1,7 @@
+/work/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
+Mon May  9 18:40:00 CDT 2022
+Running blockMesh on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
+Running checkMesh on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
+Running decomposePar on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
+Running rhoCentralFoam in parallel on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh using 64 processes
+Running reconstructPar on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
