@@ -1,6 +1,6 @@
 
 // User: bsp
-// Mesh generated on 05/09/2022 14:46:52
+// Mesh generated on 05/09/2022 15:42:53
 
 // c = 3
 // t = 1
@@ -10,13 +10,13 @@
 // hb = -6
 // alpha = -20
 // n_foil = 200
-// n_north = 75
+// n_north = 100
 // n_east = 80
-// n_south = 75
-// n_west = 80
-// e_foil = 10
+// n_south = 100
+// n_west = 160
+// e_foil = 15
 // e_north = 100
-// e_east = 50
+// e_east = 100
 // e_south = 100
 // e_west = 50
 
@@ -85,29 +85,29 @@ vertices
 blocks
 (
     // block 0
-   hex (0 8 9 10 24 32 33 34) (80 75 1) simpleGrading ( 50 100 1)
+   hex (0 8 9 10 24 32 33 34) (80 100 1) simpleGrading ( 100 100 1)
     // block 1
-   hex (0 10 11 1 24 34 35 25) (75 200 1) simpleGrading ( 100 10 1)
+   hex (0 10 11 1 24 34 35 25) (100 200 1) simpleGrading ( 100 15 1)
     // block 2
-   hex (12 2 1 11 36 26 25 35) (75 200 1) simpleGrading ( 0.01 10 1)
+   hex (12 2 1 11 36 26 25 35) (100 200 1) simpleGrading ( 0.01 15 1)
     // block 3
-   hex (2 12 13 3 26 36 37 27) (75 200 1) simpleGrading ( 100 10 1)
+   hex (2 12 13 3 26 36 37 27) (100 200 1) simpleGrading ( 100 15 1)
     // block 4
-   hex (14 4 3 13 38 28 27 37) (75 200 1) simpleGrading ( 0.01 10 1)
+   hex (14 4 3 13 38 28 27 37) (100 200 1) simpleGrading ( 0.01 15 1)
     // block 5
-   hex (14 15 16 4 38 39 40 28) (80 75 1) simpleGrading ( 50 0.01 1)
+   hex (14 15 16 4 38 39 40 28) (160 100 1) simpleGrading ( 50 0.01 1)
     // block 6
-   hex (4 16 17 18 28 40 41 42) (80 75 1) simpleGrading ( 50 100 1)
+   hex (4 16 17 18 28 40 41 42) (160 100 1) simpleGrading ( 50 100 1)
     // block 7
-   hex (4 18 19 5 28 42 43 29) (75 200 1) simpleGrading ( 100 10 1)
+   hex (4 18 19 5 28 42 43 29) (100 200 1) simpleGrading ( 100 15 1)
     // block 8
-   hex (20 6 5 19 44 30 29 43) (75 200 1) simpleGrading ( 0.01 10 1)
+   hex (20 6 5 19 44 30 29 43) (100 200 1) simpleGrading ( 0.01 15 1)
     // block 9
-   hex (6 20 21 7 30 44 45 31) (75 200 1) simpleGrading ( 100 10 1)
+   hex (6 20 21 7 30 44 45 31) (100 200 1) simpleGrading ( 100 15 1)
     // block 10
-   hex (22 0 7 21 46 24 31 45) (75 200 1) simpleGrading ( 0.01 10 1)
+   hex (22 0 7 21 46 24 31 45) (100 200 1) simpleGrading ( 0.01 15 1)
     // block 11
-   hex (22 23 8 0 46 47 32 24) (80 75 1) simpleGrading ( 50 0.01 1)
+   hex (22 23 8 0 46 47 32 24) (80 100 1) simpleGrading ( 100 0.01 1)
 );
 
 
