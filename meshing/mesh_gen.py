@@ -348,7 +348,7 @@ if __name__ == '__main__':
         ht = 6,
         hb = 6,
         alpha = -20,
-        n_foil = 200,
+        n_foil = 300,
         n_north = 100,
         n_east= 80,
         n_south= 100,
