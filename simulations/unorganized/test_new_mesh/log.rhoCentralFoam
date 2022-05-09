@@ -8,78 +8,78 @@
 Build  : 7-49b2b3b8b082
 Exec   : rhoCentralFoam -parallel
 Date   : May 09 2022
-Time   : 14:43:28
-Host   : "c415-042.stampede2.tacc.utexas.edu"
-PID    : 238174
+Time   : 14:49:35
+Host   : "c469-093.stampede2.tacc.utexas.edu"
+PID    : 227890
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
 nProcs : 64
 Slaves : 
 63
 (
-"c415-042.stampede2.tacc.utexas.edu.238175"
-"c415-042.stampede2.tacc.utexas.edu.238176"
-"c415-042.stampede2.tacc.utexas.edu.238177"
-"c415-042.stampede2.tacc.utexas.edu.238178"
-"c415-042.stampede2.tacc.utexas.edu.238179"
-"c415-042.stampede2.tacc.utexas.edu.238180"
-"c415-042.stampede2.tacc.utexas.edu.238181"
-"c415-042.stampede2.tacc.utexas.edu.238182"
-"c415-042.stampede2.tacc.utexas.edu.238183"
-"c415-042.stampede2.tacc.utexas.edu.238184"
-"c415-042.stampede2.tacc.utexas.edu.238185"
-"c415-042.stampede2.tacc.utexas.edu.238186"
-"c415-042.stampede2.tacc.utexas.edu.238187"
-"c415-042.stampede2.tacc.utexas.edu.238188"
-"c415-042.stampede2.tacc.utexas.edu.238189"
-"c415-042.stampede2.tacc.utexas.edu.238190"
-"c415-042.stampede2.tacc.utexas.edu.238191"
-"c415-042.stampede2.tacc.utexas.edu.238192"
-"c415-042.stampede2.tacc.utexas.edu.238193"
-"c415-042.stampede2.tacc.utexas.edu.238194"
-"c415-042.stampede2.tacc.utexas.edu.238195"
-"c415-042.stampede2.tacc.utexas.edu.238196"
-"c415-042.stampede2.tacc.utexas.edu.238197"
-"c415-042.stampede2.tacc.utexas.edu.238198"
-"c415-042.stampede2.tacc.utexas.edu.238199"
-"c415-042.stampede2.tacc.utexas.edu.238200"
-"c415-042.stampede2.tacc.utexas.edu.238201"
-"c415-042.stampede2.tacc.utexas.edu.238202"
-"c415-042.stampede2.tacc.utexas.edu.238203"
-"c415-042.stampede2.tacc.utexas.edu.238204"
-"c415-042.stampede2.tacc.utexas.edu.238205"
-"c415-042.stampede2.tacc.utexas.edu.238206"
-"c415-042.stampede2.tacc.utexas.edu.238207"
-"c415-042.stampede2.tacc.utexas.edu.238208"
-"c415-042.stampede2.tacc.utexas.edu.238209"
-"c415-042.stampede2.tacc.utexas.edu.238210"
-"c415-042.stampede2.tacc.utexas.edu.238211"
-"c415-042.stampede2.tacc.utexas.edu.238212"
-"c415-042.stampede2.tacc.utexas.edu.238213"
-"c415-042.stampede2.tacc.utexas.edu.238214"
-"c415-042.stampede2.tacc.utexas.edu.238215"
-"c415-042.stampede2.tacc.utexas.edu.238216"
-"c415-042.stampede2.tacc.utexas.edu.238217"
-"c415-042.stampede2.tacc.utexas.edu.238218"
-"c415-042.stampede2.tacc.utexas.edu.238219"
-"c415-042.stampede2.tacc.utexas.edu.238220"
-"c415-042.stampede2.tacc.utexas.edu.238221"
-"c415-042.stampede2.tacc.utexas.edu.238222"
-"c415-042.stampede2.tacc.utexas.edu.238223"
-"c415-042.stampede2.tacc.utexas.edu.238224"
-"c415-042.stampede2.tacc.utexas.edu.238225"
-"c415-042.stampede2.tacc.utexas.edu.238226"
-"c415-042.stampede2.tacc.utexas.edu.238227"
-"c415-042.stampede2.tacc.utexas.edu.238228"
-"c415-042.stampede2.tacc.utexas.edu.238229"
-"c415-042.stampede2.tacc.utexas.edu.238230"
-"c415-042.stampede2.tacc.utexas.edu.238231"
-"c415-042.stampede2.tacc.utexas.edu.238232"
-"c415-042.stampede2.tacc.utexas.edu.238233"
-"c415-042.stampede2.tacc.utexas.edu.238234"
-"c415-042.stampede2.tacc.utexas.edu.238235"
-"c415-042.stampede2.tacc.utexas.edu.238236"
-"c415-042.stampede2.tacc.utexas.edu.238237"
+"c469-093.stampede2.tacc.utexas.edu.227891"
+"c469-093.stampede2.tacc.utexas.edu.227892"
+"c469-093.stampede2.tacc.utexas.edu.227893"
+"c469-093.stampede2.tacc.utexas.edu.227894"
+"c469-093.stampede2.tacc.utexas.edu.227895"
+"c469-093.stampede2.tacc.utexas.edu.227896"
+"c469-093.stampede2.tacc.utexas.edu.227897"
+"c469-093.stampede2.tacc.utexas.edu.227898"
+"c469-093.stampede2.tacc.utexas.edu.227899"
+"c469-093.stampede2.tacc.utexas.edu.227900"
+"c469-093.stampede2.tacc.utexas.edu.227901"
+"c469-093.stampede2.tacc.utexas.edu.227902"
+"c469-093.stampede2.tacc.utexas.edu.227903"
+"c469-093.stampede2.tacc.utexas.edu.227904"
+"c469-093.stampede2.tacc.utexas.edu.227905"
+"c469-093.stampede2.tacc.utexas.edu.227906"
+"c469-093.stampede2.tacc.utexas.edu.227907"
+"c469-093.stampede2.tacc.utexas.edu.227908"
+"c469-093.stampede2.tacc.utexas.edu.227909"
+"c469-093.stampede2.tacc.utexas.edu.227910"
+"c469-093.stampede2.tacc.utexas.edu.227911"
+"c469-093.stampede2.tacc.utexas.edu.227912"
+"c469-093.stampede2.tacc.utexas.edu.227913"
+"c469-093.stampede2.tacc.utexas.edu.227914"
+"c469-093.stampede2.tacc.utexas.edu.227915"
+"c469-093.stampede2.tacc.utexas.edu.227916"
+"c469-093.stampede2.tacc.utexas.edu.227917"
+"c469-093.stampede2.tacc.utexas.edu.227918"
+"c469-093.stampede2.tacc.utexas.edu.227919"
+"c469-093.stampede2.tacc.utexas.edu.227920"
+"c469-093.stampede2.tacc.utexas.edu.227921"
+"c469-093.stampede2.tacc.utexas.edu.227922"
+"c469-093.stampede2.tacc.utexas.edu.227923"
+"c469-093.stampede2.tacc.utexas.edu.227924"
+"c469-093.stampede2.tacc.utexas.edu.227925"
+"c469-093.stampede2.tacc.utexas.edu.227926"
+"c469-093.stampede2.tacc.utexas.edu.227927"
+"c469-093.stampede2.tacc.utexas.edu.227928"
+"c469-093.stampede2.tacc.utexas.edu.227929"
+"c469-093.stampede2.tacc.utexas.edu.227930"
+"c469-093.stampede2.tacc.utexas.edu.227931"
+"c469-093.stampede2.tacc.utexas.edu.227932"
+"c469-093.stampede2.tacc.utexas.edu.227933"
+"c469-093.stampede2.tacc.utexas.edu.227934"
+"c469-093.stampede2.tacc.utexas.edu.227935"
+"c469-093.stampede2.tacc.utexas.edu.227936"
+"c469-093.stampede2.tacc.utexas.edu.227937"
+"c469-093.stampede2.tacc.utexas.edu.227938"
+"c469-093.stampede2.tacc.utexas.edu.227939"
+"c469-093.stampede2.tacc.utexas.edu.227940"
+"c469-093.stampede2.tacc.utexas.edu.227941"
+"c469-093.stampede2.tacc.utexas.edu.227942"
+"c469-093.stampede2.tacc.utexas.edu.227943"
+"c469-093.stampede2.tacc.utexas.edu.227944"
+"c469-093.stampede2.tacc.utexas.edu.227945"
+"c469-093.stampede2.tacc.utexas.edu.227946"
+"c469-093.stampede2.tacc.utexas.edu.227947"
+"c469-093.stampede2.tacc.utexas.edu.227948"
+"c469-093.stampede2.tacc.utexas.edu.227949"
+"c469-093.stampede2.tacc.utexas.edu.227950"
+"c469-093.stampede2.tacc.utexas.edu.227951"
+"c469-093.stampede2.tacc.utexas.edu.227952"
+"c469-093.stampede2.tacc.utexas.edu.227953"
 )
 
 Pstream initialized with:
@@ -119,59 +119,41 @@ fluxScheme: Kurganov
 
 Starting time loop
 
-Mean and max Courant Numbers = 0.115301 1.18489
+Mean and max Courant Numbers = 0.12226 1.31124
 Time = 0.0005
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.27 s  ClockTime = 0 s
+ExecutionTime = 0.31 s  ClockTime = 0 s
 
-Mean and max Courant Numbers = 0.115305 1.20487
+Mean and max Courant Numbers = 0.122262 1.31138
 Time = 0.001
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.29 s  ClockTime = 1 s
+ExecutionTime = 0.41 s  ClockTime = 0 s
 
-Mean and max Courant Numbers = 0.115304 1.22353
+Mean and max Courant Numbers = 0.122258 1.31313
 Time = 0.0015
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.32 s  ClockTime = 1 s
+ExecutionTime = 0.45 s  ClockTime = 0 s
 
-Mean and max Courant Numbers = 0.115301 1.25703
+Mean and max Courant Numbers = 0.122257 1.4042
 Time = 0.002
 
 diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
 diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.34 s  ClockTime = 1 s
-
-Mean and max Courant Numbers = 0.115297 1.30839
-Time = 0.0025
-
-diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.36 s  ClockTime = 1 s
-
-Mean and max Courant Numbers = 0.115293 1.32425
-Time = 0.003
-
-diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
-diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
-ExecutionTime = 0.38 s  ClockTime = 1 s
+ExecutionTime = 0.56 s  ClockTime = 0 s
 
 [31] #0  Foam::error::printStack(Foam::Ostream&) at ??:?
 [31] #1  Foam::sigFpe::sigHandler(int) at ??:?
@@ -184,7 +166,7 @@ ExecutionTime = 0.38 s  ClockTime = 1 s
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 238205 RUNNING AT c415-042
+=   PID 227921 RUNNING AT c469-093
 =   EXIT CODE: 8
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES

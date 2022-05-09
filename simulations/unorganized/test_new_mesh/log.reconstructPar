@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : reconstructPar
 Date   : May 09 2022
-Time   : 14:43:30
-Host   : "c415-042.stampede2.tacc.utexas.edu"
-PID    : 238388
+Time   : 14:49:38
+Host   : "c469-093.stampede2.tacc.utexas.edu"
+PID    : 228103
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
 nProcs : 1
@@ -21,7 +21,50 @@ allowSystemOperations : Allowing user-supplied system call operations
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 Create time
 
---> FOAM Warning : 
-    From function int main(int, char **)
-    in file reconstructPar.C at line 220
-    No times selected
+
+
+Reconstructing fields for mesh region0
+
+Time = 0.001
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.002
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+
+End
+
