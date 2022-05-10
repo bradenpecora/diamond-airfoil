@@ -1,0 +1,201 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-49b2b3b8b082
+Exec   : rhoCentralFoam -parallel
+Date   : May 09 2022
+Time   : 20:15:18
+Host   : "c469-001.stampede2.tacc.utexas.edu"
+PID    : 206080
+I/O    : uncollated
+Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh2
+nProcs : 64
+Slaves : 
+63
+(
+"c469-001.stampede2.tacc.utexas.edu.206081"
+"c469-001.stampede2.tacc.utexas.edu.206082"
+"c469-001.stampede2.tacc.utexas.edu.206083"
+"c469-001.stampede2.tacc.utexas.edu.206084"
+"c469-001.stampede2.tacc.utexas.edu.206085"
+"c469-001.stampede2.tacc.utexas.edu.206086"
+"c469-001.stampede2.tacc.utexas.edu.206087"
+"c469-001.stampede2.tacc.utexas.edu.206088"
+"c469-001.stampede2.tacc.utexas.edu.206089"
+"c469-001.stampede2.tacc.utexas.edu.206090"
+"c469-001.stampede2.tacc.utexas.edu.206091"
+"c469-001.stampede2.tacc.utexas.edu.206092"
+"c469-001.stampede2.tacc.utexas.edu.206093"
+"c469-001.stampede2.tacc.utexas.edu.206094"
+"c469-001.stampede2.tacc.utexas.edu.206095"
+"c469-001.stampede2.tacc.utexas.edu.206096"
+"c469-001.stampede2.tacc.utexas.edu.206097"
+"c469-001.stampede2.tacc.utexas.edu.206098"
+"c469-001.stampede2.tacc.utexas.edu.206099"
+"c469-001.stampede2.tacc.utexas.edu.206100"
+"c469-001.stampede2.tacc.utexas.edu.206101"
+"c469-001.stampede2.tacc.utexas.edu.206102"
+"c469-001.stampede2.tacc.utexas.edu.206103"
+"c469-001.stampede2.tacc.utexas.edu.206104"
+"c469-001.stampede2.tacc.utexas.edu.206105"
+"c469-001.stampede2.tacc.utexas.edu.206106"
+"c469-001.stampede2.tacc.utexas.edu.206107"
+"c469-001.stampede2.tacc.utexas.edu.206108"
+"c469-001.stampede2.tacc.utexas.edu.206109"
+"c469-001.stampede2.tacc.utexas.edu.206110"
+"c469-001.stampede2.tacc.utexas.edu.206111"
+"c469-001.stampede2.tacc.utexas.edu.206112"
+"c469-001.stampede2.tacc.utexas.edu.206113"
+"c469-001.stampede2.tacc.utexas.edu.206114"
+"c469-001.stampede2.tacc.utexas.edu.206115"
+"c469-001.stampede2.tacc.utexas.edu.206116"
+"c469-001.stampede2.tacc.utexas.edu.206117"
+"c469-001.stampede2.tacc.utexas.edu.206118"
+"c469-001.stampede2.tacc.utexas.edu.206119"
+"c469-001.stampede2.tacc.utexas.edu.206120"
+"c469-001.stampede2.tacc.utexas.edu.206121"
+"c469-001.stampede2.tacc.utexas.edu.206122"
+"c469-001.stampede2.tacc.utexas.edu.206123"
+"c469-001.stampede2.tacc.utexas.edu.206124"
+"c469-001.stampede2.tacc.utexas.edu.206125"
+"c469-001.stampede2.tacc.utexas.edu.206126"
+"c469-001.stampede2.tacc.utexas.edu.206127"
+"c469-001.stampede2.tacc.utexas.edu.206128"
+"c469-001.stampede2.tacc.utexas.edu.206129"
+"c469-001.stampede2.tacc.utexas.edu.206130"
+"c469-001.stampede2.tacc.utexas.edu.206131"
+"c469-001.stampede2.tacc.utexas.edu.206132"
+"c469-001.stampede2.tacc.utexas.edu.206133"
+"c469-001.stampede2.tacc.utexas.edu.206134"
+"c469-001.stampede2.tacc.utexas.edu.206135"
+"c469-001.stampede2.tacc.utexas.edu.206136"
+"c469-001.stampede2.tacc.utexas.edu.206137"
+"c469-001.stampede2.tacc.utexas.edu.206138"
+"c469-001.stampede2.tacc.utexas.edu.206139"
+"c469-001.stampede2.tacc.utexas.edu.206140"
+"c469-001.stampede2.tacc.utexas.edu.206141"
+"c469-001.stampede2.tacc.utexas.edu.206142"
+"c469-001.stampede2.tacc.utexas.edu.206143"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+fluxScheme: Kurganov
+
+Starting time loop
+
+Mean and max Courant Numbers = 0.0798602 0.803257
+Time = 0.0005
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.25 s  ClockTime = 0 s
+
+Mean and max Courant Numbers = 0.0798671 0.821538
+Time = 0.001
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.27 s  ClockTime = 0 s
+
+Mean and max Courant Numbers = 0.0798714 0.848746
+Time = 0.0015
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.29 s  ClockTime = 0 s
+
+Mean and max Courant Numbers = 0.0798689 0.863752
+Time = 0.002
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.31 s  ClockTime = 0 s
+
+Mean and max Courant Numbers = 0.0798612 0.876973
+Time = 0.0025
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUy, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.32 s  ClockTime = 0 s
+
+[28] #0  [45] #0  Foam::error::printStack(Foam::Ostream&)Foam::error::printStack(Foam::Ostream&)[20] #0  Foam::error::printStack(Foam::Ostream&) at ??:?
+ at ??:?
+ at ??:?
+[45] #1  Foam::sigFpe::sigHandler(int)[20] #1  Foam::sigFpe::sigHandler(int)[28] #1  Foam::sigFpe::sigHandler(int) at ??:?
+[28] #2  ? at ??:?
+[20] #2  ? at ??:?
+[45] #2  ? in "/lib64/libpthread.so.0"
+[28] #3  Foam::sqrt(Foam::Field<double>&, Foam::UList<double> const&) in "/lib64/libpthread.so.0"
+[20] #3  Foam::sqrt(Foam::Field<double>&, Foam::UList<double> const&) in "/lib64/libpthread.so.0"
+[45] #3  Foam::sqrt(Foam::Field<double>&, Foam::UList<double> const&) at ??:?
+[28] #4   at ??:?
+[20] #4   at ??:?
+[45] #4  Foam::tmp<Foam::GeometricField<double, Foam::volMesh> > Foam::sqrt<Foam::fvPatchField, Foam::volMesh>(Foam::tmp<Foam::GeometricField<double, Foam::volMesh> > const&)Foam::tmp<Foam::GeometricField<double, Foam::volMesh> > Foam::sqrt<Foam::fvPatchField, Foam::volMesh>(Foam::tmp<Foam::GeometricField<double, Foam::volMesh> > const&)Foam::tmp<Foam::GeometricField<double, Foam::volMesh> > Foam::sqrt<Foam::fvPatchField, Foam::volMesh>(Foam::tmp<Foam::GeometricField<double, Foam::volMesh> > const&) at ??:?
+[28] #5   at ??:?
+[20] #5   at ??:?
+[45] #5  ??? at ??:?
+[28] #6  __libc_start_main at ??:?
+[20] #6  __libc_start_main at ??:?
+[45] #6  __libc_start_main in "/lib64/libc.so.6"
+[28] #7   in "/lib64/libc.so.6"
+[20] #7   in "/lib64/libc.so.6"
+[45] #7  ??? at ??:?
+ at ??:?
+ at ??:?
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 206100 RUNNING AT c469-001
+=   EXIT CODE: 8
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+   Intel(R) MPI Library troubleshooting guide:
+      https://software.intel.com/node/561764
+===================================================================================
