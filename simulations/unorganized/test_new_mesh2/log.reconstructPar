@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : reconstructPar
 Date   : May 09 2022
-Time   : 20:15:20
-Host   : "c469-001.stampede2.tacc.utexas.edu"
-PID    : 206314
+Time   : 20:28:29
+Host   : "c467-082.stampede2.tacc.utexas.edu"
+PID    : 7843
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh2
 nProcs : 1
@@ -21,7 +21,90 @@ allowSystemOperations : Allowing user-supplied system call operations
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 Create time
 
---> FOAM Warning : 
-    From function int main(int, char **)
-    in file reconstructPar.C at line 220
-    No times selected
+
+
+Reconstructing fields for mesh region0
+
+Time = 0.5
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 1
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 1.5
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 2
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+
+End
+
