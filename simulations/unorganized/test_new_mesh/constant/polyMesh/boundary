@@ -20,42 +20,42 @@ FoamFile
     inlet
     {
         type            patch;
-        nFaces          250;
-        startFace       522900;
+        nFaces          100;
+        startFace       208050;
     }
     outlet
     {
         type            patch;
-        nFaces          250;
-        startFace       523150;
+        nFaces          100;
+        startFace       208150;
     }
     airfoil
     {
         type            wall;
         inGroups        List<word> 1(wall);
         nFaces          1600;
-        startFace       523400;
+        startFace       208250;
     }
     top
     {
         type            wall;
         inGroups        List<word> 1(wall);
         nFaces          1050;
-        startFace       525000;
+        startFace       209850;
     }
     bottom
     {
         type            wall;
         inGroups        List<word> 1(wall);
         nFaces          1050;
-        startFace       526050;
+        startFace       210900;
     }
     defaultFaces
     {
         type            empty;
         inGroups        List<word> 1(empty);
-        nFaces          525000;
-        startFace       527100;
+        nFaces          210000;
+        startFace       211950;
     }
 )
 
