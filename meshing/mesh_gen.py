@@ -188,8 +188,8 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
 
     blocks[5].nx1 = n_west
     blocks[5].ex1 = e_west
-    blocks[5].nx2 = n_south
-    blocks[5].ex2 = 1/e_south
+    blocks[5].nx2 = n_north
+    blocks[5].ex2 = 1/e_north
 
     blocks[6].nx1 = n_west
     blocks[6].ex1 = e_west
@@ -347,17 +347,17 @@ if __name__ == '__main__':
         lw = 6,
         ht = 6,
         hb = 6,
-        alpha = -20,
-        n_foil = 300,
-        n_north = 200,
+        alpha = -18,
+        n_foil = 200,
+        n_north = 100,
         n_east= 150,
-        n_south= 200,
-        n_west=160,
-        e_foil=20,
-        e_north=200,
-        e_east=200,
-        e_south=200,
-        e_west=50,
+        n_south= 150,
+        n_west=100,
+        e_foil=10,
+        e_north=10,
+        e_east=10,
+        e_south=10,
+        e_west=10,
         user_name='bsp'
     )
 
