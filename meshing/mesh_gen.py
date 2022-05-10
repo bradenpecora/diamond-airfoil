@@ -349,14 +349,14 @@ if __name__ == '__main__':
         hb = 6,
         alpha = -30,
         n_foil = 100,
-        n_north = 50,
+        n_north = 75,
         n_east= 100,
-        n_south= 50,
+        n_south= 75,
         n_west=100,
         e_foil=10,
-        e_north=50,
+        e_north=20,
         e_east=50,
-        e_south=50,
+        e_south=20,
         e_west=50,
         user_name='bsp'
     )
