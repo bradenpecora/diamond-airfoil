@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : reconstructPar
 Date   : May 09 2022
-Time   : 19:16:35
-Host   : "c469-001.stampede2.tacc.utexas.edu"
-PID    : 193240
+Time   : 19:58:37
+Host   : "c401-123.stampede2.tacc.utexas.edu"
+PID    : 202743
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh
 nProcs : 1
@@ -25,7 +25,7 @@ Create time
 
 Reconstructing fields for mesh region0
 
-Time = 0.001
+Time = 0.5
 
 Reconstructing FV fields
 
@@ -45,7 +45,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.002
+Time = 1
 
 Reconstructing FV fields
 
@@ -65,7 +65,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.003
+Time = 1.5
 
 Reconstructing FV fields
 
@@ -85,7 +85,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.004
+Time = 2
 
 Reconstructing FV fields
 
@@ -105,7 +105,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.005
+Time = 2.5
 
 Reconstructing FV fields
 
@@ -125,7 +125,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.006
+Time = 3
 
 Reconstructing FV fields
 
@@ -145,7 +145,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.007
+Time = 3.5001
 
 Reconstructing FV fields
 
@@ -165,7 +165,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.008
+Time = 4.0001
 
 Reconstructing FV fields
 
@@ -185,7 +185,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.009
+Time = 4.5001
 
 Reconstructing FV fields
 
@@ -205,7 +205,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.01
+Time = 5.0001
 
 Reconstructing FV fields
 
@@ -225,7 +225,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.011
+Time = 5.5001
 
 Reconstructing FV fields
 
@@ -245,7 +245,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.012
+Time = 6.0001
 
 Reconstructing FV fields
 
@@ -265,7 +265,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.013
+Time = 6.5001
 
 Reconstructing FV fields
 
@@ -285,87 +285,7 @@ No point fields
 
 No lagrangian fields
 
-Time = 0.014
-
-Reconstructing FV fields
-
-    Reconstructing volScalarFields
-
-        T
-        p
-        rho
-
-    Reconstructing volVectorFields
-
-        U
-
-Reconstructing point fields
-
-No point fields
-
-No lagrangian fields
-
-Time = 0.015
-
-Reconstructing FV fields
-
-    Reconstructing volScalarFields
-
-        T
-        p
-        rho
-
-    Reconstructing volVectorFields
-
-        U
-
-Reconstructing point fields
-
-No point fields
-
-No lagrangian fields
-
-Time = 0.016
-
-Reconstructing FV fields
-
-    Reconstructing volScalarFields
-
-        T
-        p
-        rho
-
-    Reconstructing volVectorFields
-
-        U
-
-Reconstructing point fields
-
-No point fields
-
-No lagrangian fields
-
-Time = 0.017
-
-Reconstructing FV fields
-
-    Reconstructing volScalarFields
-
-        T
-        p
-        rho
-
-    Reconstructing volVectorFields
-
-        U
-
-Reconstructing point fields
-
-No point fields
-
-No lagrangian fields
-
-Time = 0.018
+Time = 7.0001
 
 Reconstructing FV fields
 

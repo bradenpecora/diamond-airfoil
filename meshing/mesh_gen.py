@@ -342,15 +342,15 @@ def main(c,t,lf,lw,ht,hb,alpha, n_foil, n_north, n_east, n_south, n_west, e_foil
 if __name__ == '__main__':
     output = main(
         c = 3,
-        t = 1,
+        t = 0.3,
         lf = 6,
         lw = 6,
         ht = 6,
         hb = 6,
         alpha = -17,
-        n_foil = 200,
+        n_foil = 100,
         n_north = 50,
-        n_east= 150,
+        n_east= 100,
         n_south= 50,
         n_west=100,
         e_foil=10,
