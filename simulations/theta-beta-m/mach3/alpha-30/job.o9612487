@@ -1,0 +1,8 @@
+/work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
+Tue May 10 17:59:46 CDT 2022
+Running blockMesh on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
+Running checkMesh on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
+Running decomposePar on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
+Running rhoCentralFoam in parallel on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30 using 64 processes
+Running reconstructPar on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
+Tue May 10 19:00:28 CDT 2022

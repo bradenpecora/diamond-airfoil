@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 7-49b2b3b8b082
 Exec   : checkMesh
-Date   : May 09 2022
-Time   : 20:38:57
-Host   : "c406-113.stampede2.tacc.utexas.edu"
-PID    : 77575
+Date   : May 07 2022
+Time   : 02:06:18
+Host   : "c411-064.stampede2.tacc.utexas.edu"
+PID    : 16391
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/unorganized/test_new_mesh2
 nProcs : 1
@@ -26,11 +26,11 @@ Create polyMesh for time = 0
 Time = 0
 
 Mesh stats
-    points:           122200
+    points:           2409800
     internal points:  0
-    faces:            241100
-    internal faces:   118900
-    cells:            60000
+    faces:            4804900
+    internal faces:   2395100
+    cells:            1200000
     faces per cell:   6
     boundary patches: 6
     point zones:      0
@@ -38,7 +38,7 @@ Mesh stats
     cell zones:       0
 
 Overall number of cells of each type:
-    hexahedra:     60000
+    hexahedra:     1200000
     prisms:        0
     wedges:        0
     pyramids:      0
@@ -56,27 +56,27 @@ Checking topology...
 
 Checking patch topology for multiply connected surfaces...
     Patch               Faces    Points   Surface topology                  
-    inlet               100      202      ok (non-closed singly connected)  
-    outlet              100      202      ok (non-closed singly connected)  
-    airfoil             800      1600     ok (non-closed singly connected)  
-    top                 600      1202     ok (non-closed singly connected)  
-    bottom              600      1202     ok (non-closed singly connected)  
-    defaultFaces        120000   122200   ok (non-closed singly connected)  
+    inlet               500      1002     ok (non-closed singly connected)  
+    outlet              500      1002     ok (non-closed singly connected)  
+    airfoil             4000     8000     ok (non-closed singly connected)  
+    top                 2400     4802     ok (non-closed singly connected)  
+    bottom              2400     4802     ok (non-closed singly connected)  
+    defaultFaces        2400000  2409800  ok (non-closed singly connected)  
 
 Checking geometry...
     Overall domain bounding box (-6 -6 -0.05) (6 6 0.05)
     Mesh has 2 geometric (non-empty/wedge) directions (1 1 0)
     Mesh has 2 solution (non-empty) directions (1 1 0)
     All edges aligned with or perpendicular to non-empty directions.
-    Boundary openness (1.14242e-19 -1.03699e-17 6.92736e-16) OK.
-    Max cell openness = 2.12009e-16 OK.
-    Max aspect ratio = 218.143 OK.
-    Minimum face area = 1.89112e-05. Maximum face area = 0.0787969.  Face area magnitudes OK.
-    Min volume = 1.89112e-06. Max volume = 0.00787969.  Total volume = 14.22.  Cell volumes OK.
-    Mesh non-orthogonality Max: 35.6894 average: 20.5307
+    Boundary openness (-2.01164e-17 -7.57414e-17 -4.41971e-15) OK.
+    Max cell openness = 3.22192e-16 OK.
+    Max aspect ratio = 56.3202 OK.
+    Minimum face area = 3.3249e-06. Maximum face area = 0.0139508.  Face area magnitudes OK.
+    Min volume = 3.3249e-07. Max volume = 0.000642021.  Total volume = 13.8.  Cell volumes OK.
+    Mesh non-orthogonality Max: 38.4313 average: 20.4572
     Non-orthogonality check OK.
     Face pyramids OK.
-    Max skewness = 1.7817 OK.
+    Max skewness = 0.792892 OK.
     Coupled point location match (average 0) OK.
 
 Mesh OK.
