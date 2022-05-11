@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 7-49b2b3b8b082
 Exec   : reconstructPar
-Date   : May 10 2022
-Time   : 18:55:33
-Host   : "c404-001.stampede2.tacc.utexas.edu"
-PID    : 65840
+Date   : May 11 2022
+Time   : 16:31:04
+Host   : "c436-103.stampede2.tacc.utexas.edu"
+PID    : 225652
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
 nProcs : 1

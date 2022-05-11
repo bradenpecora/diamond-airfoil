@@ -90038,13 +90038,23 @@ boundaryField
     {
         type            zeroGradient;
     }
-    top
+    top_fore
     {
-        type            zeroGradient;
+        type            slip;
     }
-    bottom
+    top_wake
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform 1;
+    }
+    bottom_fore
+    {
+        type            slip;
+    }
+    bottom_wake
+    {
+        type            fixedValue;
+        value           uniform 1;
     }
     defaultFaces
     {

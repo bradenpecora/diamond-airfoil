@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 7-49b2b3b8b082
 Exec   : decomposePar
-Date   : May 10 2022
-Time   : 18:00:15
-Host   : "c404-001.stampede2.tacc.utexas.edu"
-PID    : 62279
+Date   : May 11 2022
+Time   : 15:34:20
+Host   : "c436-103.stampede2.tacc.utexas.edu"
+PID    : 222434
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
 nProcs : 1
@@ -47,7 +47,7 @@ Calculating distribution of cells
 
 Selecting decompositionMethod hierarchical
 
-Finished decomposition in 0.09 s
+Finished decomposition in 0.1 s
 
 Calculating original mesh data
 

@@ -33,14 +33,24 @@ boundaryField
         value           uniform (MACH_NUMBER 0 0);
     }
 
-    bottom
+    bottom_fore
     {
         type            slip;
     }
 
-    top
+    top_fore
     {
         type            slip;
+    }
+
+    bottom_wake
+    {
+        type            noSlip;
+    }
+
+    top_wake
+    {
+        type            noSlip;
     }
 
     airfoil

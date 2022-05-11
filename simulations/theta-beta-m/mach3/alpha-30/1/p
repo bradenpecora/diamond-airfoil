@@ -75355,7 +75355,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00927
+1.00926
 1.91638
 3.82335
 4.50275
@@ -75505,7 +75505,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00843
+1.00844
 1.89357
 3.80326
 4.50186
@@ -75580,7 +75580,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00808
+1.00809
 1.88423
 3.79728
 4.50088
@@ -75881,7 +75881,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1.00651
-1.83849
+1.83848
 3.76896
 4.49934
 4.49515
@@ -76105,7 +76105,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00545
+1.00546
 1.80469
 3.75167
 4.49856
@@ -76180,7 +76180,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00511
+1.00512
 1.79144
 3.73923
 4.49797
@@ -76255,7 +76255,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00479
+1.00478
 1.77972
 3.7293
 4.49624
@@ -76330,7 +76330,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00452
+1.00451
 1.76862
 3.72313
 4.49557
@@ -76406,7 +76406,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1.0042
-1.75631
+1.75632
 3.71824
 4.49586
 4.4876
@@ -76480,7 +76480,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00391
+1.0039
 1.7427
 3.7073
 4.49558
@@ -76556,7 +76556,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1.00363
-1.72976
+1.72975
 3.69374
 4.49396
 4.48505
@@ -76630,8 +76630,8 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00337
-1.71768
+1.00338
+1.71769
 3.68492
 4.49218
 4.48401
@@ -76705,7 +76705,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00314
+1.00313
 1.70489
 3.67788
 4.49224
@@ -76781,7 +76781,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1.00288
-1.69114
+1.69113
 3.66712
 4.49249
 4.48165
@@ -76855,9 +76855,9 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00264
-1.67787
-3.65453
+1.00265
+1.67788
+3.65454
 4.49164
 4.47976
 4.41793
@@ -76931,7 +76931,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1.00244
-1.665
+1.66499
 3.64482
 4.48907
 4.47834
@@ -77005,8 +77005,8 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00223
-1.65134
+1.00224
+1.65135
 3.63422
 4.48739
 4.47719
@@ -77155,7 +77155,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00185
+1.00186
 1.62405
 3.60948
 4.48743
@@ -77230,7 +77230,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00169
+1.00168
 1.61051
 3.59978
 4.48607
@@ -77305,8 +77305,8 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00151
-1.59634
+1.00153
+1.59635
 3.58595
 4.48337
 4.47103
@@ -77380,8 +77380,8 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00138
-1.58235
+1.00135
+1.58234
 3.57094
 4.48183
 4.46991
@@ -77455,9 +77455,9 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00122
+1.00124
 1.56848
-3.5581
+3.55811
 4.48124
 4.46882
 4.41762
@@ -77530,8 +77530,8 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00112
-1.55446
+1.00109
+1.55445
 3.54515
 4.47979
 4.46658
@@ -77605,7 +77605,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00097
+1.00098
 1.54052
 3.53184
 4.47847
@@ -77680,7 +77680,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00087
+1.00086
 1.52635
 3.51764
 4.47683
@@ -77755,7 +77755,7 @@ internalField   nonuniform List<scalar>
 1
 1
 1
-1.00076
+1.00077
 1.51207
 3.50131
 4.47352
@@ -86022,7 +86022,7 @@ internalField   nonuniform List<scalar>
 1.12057
 1.01611
 1.02503
-1.03521
+1.03522
 1.04671
 1.05926
 1.07386
@@ -90038,13 +90038,23 @@ boundaryField
     {
         type            zeroGradient;
     }
-    top
+    top_fore
     {
-        type            zeroGradient;
+        type            slip;
     }
-    bottom
+    top_wake
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform 1;
+    }
+    bottom_fore
+    {
+        type            slip;
+    }
+    bottom_wake
+    {
+        type            fixedValue;
+        value           uniform 1;
     }
     defaultFaces
     {

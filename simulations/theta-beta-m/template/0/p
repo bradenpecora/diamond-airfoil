@@ -31,14 +31,26 @@ boundaryField
         type            zeroGradient;
     }
 
-    bottom
+    bottom_fore
     {
-        type            zeroGradient;
+        type            slip;
     }
 
-    top
+    top_fore
     {
-        type            zeroGradient;
+        type            slip;
+    }
+
+    bottom_wake
+    {
+        type            fixedValue;
+        value           uniform 1;
+    }
+
+    top_wake
+    {
+        type            fixedValue;
+        value           uniform 1;
     }
 
     airfoil

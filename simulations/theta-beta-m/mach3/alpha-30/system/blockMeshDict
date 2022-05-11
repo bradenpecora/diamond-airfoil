@@ -1,6 +1,6 @@
 
 // User: bsp
-// Mesh generated on 05/10/2022 17:59:33
+// Mesh generated on 05/11/2022 15:33:18
 
 // c = 3.0
 // t = 0.3
@@ -147,12 +147,11 @@ boundary
          (7 31 24 0)
      );
  }
- top
+ top_fore
  {
      type wall;
      faces
      (
-         (9 34 33 10)
          (10 35 34 11)
          (11 36 35 12)
          (12 37 36 13)
@@ -160,7 +159,15 @@ boundary
          (14 39 38 15)
      );
  }
- bottom
+ top_wake
+ {
+     type wall;
+     faces
+     (
+         (9 34 33 10)
+     );
+ }
+ bottom_fore
  {
      type wall;
      faces
@@ -170,6 +177,13 @@ boundary
          (19 43 44 20)
          (20 44 45 21)
          (21 45 46 22)
+     );
+ }
+ bottom_wake
+ {
+     type wall;
+     faces
+     (
          (22 46 47 23)
      );
  }

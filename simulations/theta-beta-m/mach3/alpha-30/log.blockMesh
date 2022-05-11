@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 7-49b2b3b8b082
 Exec   : blockMesh
-Date   : May 10 2022
-Time   : 17:59:48
-Host   : "c404-001.stampede2.tacc.utexas.edu"
-PID    : 62254
+Date   : May 11 2022
+Time   : 15:33:52
+Host   : "c436-103.stampede2.tacc.utexas.edu"
+PID    : 222409
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
 nProcs : 1
@@ -116,9 +116,11 @@ Patches
   patch 0 (start: 178850 size: 150) name: inlet
   patch 1 (start: 179000 size: 150) name: outlet
   patch 2 (start: 179150 size: 800) name: airfoil
-  patch 3 (start: 179950 size: 600) name: top
-  patch 4 (start: 180550 size: 600) name: bottom
-  patch 5 (start: 181150 size: 180000) name: defaultFaces
+  patch 3 (start: 179950 size: 500) name: top_fore
+  patch 4 (start: 180450 size: 100) name: top_wake
+  patch 5 (start: 180550 size: 500) name: bottom_fore
+  patch 6 (start: 181050 size: 100) name: bottom_wake
+  patch 7 (start: 181150 size: 180000) name: defaultFaces
 
 End
 

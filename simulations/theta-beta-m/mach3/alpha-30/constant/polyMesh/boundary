@@ -15,7 +15,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-6
+8
 (
     inlet
     {
@@ -36,19 +36,33 @@ FoamFile
         nFaces          800;
         startFace       179150;
     }
-    top
+    top_fore
     {
         type            wall;
         inGroups        List<word> 1(wall);
-        nFaces          600;
+        nFaces          500;
         startFace       179950;
     }
-    bottom
+    top_wake
     {
         type            wall;
         inGroups        List<word> 1(wall);
-        nFaces          600;
+        nFaces          100;
+        startFace       180450;
+    }
+    bottom_fore
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          500;
         startFace       180550;
+    }
+    bottom_wake
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          100;
+        startFace       181050;
     }
     defaultFaces
     {

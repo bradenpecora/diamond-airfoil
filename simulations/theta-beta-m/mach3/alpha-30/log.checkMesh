@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 7-49b2b3b8b082
 Exec   : checkMesh
-Date   : May 10 2022
-Time   : 17:59:56
-Host   : "c404-001.stampede2.tacc.utexas.edu"
-PID    : 62262
+Date   : May 11 2022
+Time   : 15:34:00
+Host   : "c436-103.stampede2.tacc.utexas.edu"
+PID    : 222417
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
 nProcs : 1
@@ -32,7 +32,7 @@ Mesh stats
     internal faces:   178850
     cells:            90000
     faces per cell:   6
-    boundary patches: 6
+    boundary patches: 8
     point zones:      0
     face zones:       0
     cell zones:       0
@@ -59,8 +59,10 @@ Checking patch topology for multiply connected surfaces...
     inlet               150      302      ok (non-closed singly connected)  
     outlet              150      302      ok (non-closed singly connected)  
     airfoil             800      1600     ok (non-closed singly connected)  
-    top                 600      1202     ok (non-closed singly connected)  
-    bottom              600      1202     ok (non-closed singly connected)  
+    top_fore            500      1002     ok (non-closed singly connected)  
+    top_wake            100      202      ok (non-closed singly connected)  
+    bottom_fore         500      1002     ok (non-closed singly connected)  
+    bottom_wake         100      202      ok (non-closed singly connected)  
     defaultFaces        180000   182300   ok (non-closed singly connected)  
 
 Checking geometry...
@@ -68,7 +70,7 @@ Checking geometry...
     Mesh has 2 geometric (non-empty/wedge) directions (1 1 0)
     Mesh has 2 solution (non-empty) directions (1 1 0)
     All edges aligned with or perpendicular to non-empty directions.
-    Boundary openness (1.06999e-18 -1.03699e-17 1.38302e-16) OK.
+    Boundary openness (1.06999e-18 -8.8407e-18 1.38302e-16) OK.
     Max cell openness = 2.18345e-16 OK.
     Max aspect ratio = 116.29 OK.
     Minimum face area = 2.52036e-05. Maximum face area = 0.042006.  Face area magnitudes OK.

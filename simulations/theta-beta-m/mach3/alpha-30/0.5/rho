@@ -90844,12 +90844,22 @@ boundaryField
 )
 ;
     }
-    top
+    top_fore
     {
         type            calculated;
         value           uniform 1.40001;
     }
-    bottom
+    top_wake
+    {
+        type            calculated;
+        value           uniform 1.40001;
+    }
+    bottom_fore
+    {
+        type            calculated;
+        value           uniform 1.40001;
+    }
+    bottom_wake
     {
         type            calculated;
         value           uniform 1.40001;

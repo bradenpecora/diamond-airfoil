@@ -13,4 +13,6 @@ runParallel rhoCentralFoam # run the solver
 
 runApplication reconstructPar # reconstruct the solution
 
+runApplication postProcess -latestTime -func singleGraph
+
 #------------------------------------------------------------------------------
