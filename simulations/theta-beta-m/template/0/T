@@ -35,12 +35,14 @@ boundaryField
 
     bottom_fore
     {
-        type            slip;
+        type            fixedValue;
+        value           uniform 1;
     }
 
     top_fore
     {
-        type            slip;
+        type            fixedValue;
+        value           uniform 1;
     }
 
     bottom_wake

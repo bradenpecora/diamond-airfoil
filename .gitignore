@@ -1,4 +1,4 @@
 *.asv
 **/processor*/**
-simulations/theta-beta-m/mach*/alpha*/log.rhoCentralFoam
+simulations/theta-beta-m/mach3/alpha*/log.rhoCentralFoam
 simulations/theta-beta-m/*/*/log.rhoCentralFoam
