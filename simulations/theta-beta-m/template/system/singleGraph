@@ -33,7 +33,7 @@ sets
 
     line 
     {
-        type    lineCell;
+        type    lineUniform;
         axis    xyz;
         start   (DXA NCHORD 0);
         end     (DXA PCHORD 0);
@@ -41,7 +41,7 @@ sets
     }
 );
 
-fields          ( U, mag(U));
+fields          (U);
 
 
 // ************************************************************************* //
