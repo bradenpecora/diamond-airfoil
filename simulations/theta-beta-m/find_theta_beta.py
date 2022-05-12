@@ -58,11 +58,11 @@ def main(mach = 3):
         dy = delta(y)
         du = delta(umag)
         
-        y = y + dy/2
+        y = y + dy/2 #can comment out?
         dudy = du/dy
 
-        df = pd.DataFrame({'y':y,'dudy':dudy})
-        yshock = df.iloc[df['dudy'].idxmax()]['y']
+        df = pd.DataFrame({'y':y,'umgag':umag,'dudy':dudy})
+        yshock = df.iloc[df['dudy'].idxmin()+1]['y'] #can remove '+1'?
 
         beta = find_beta(yshock=yshock,theta=theta,**params)
         this_thetabeta = pd.DataFrame({'theta':[theta],'beta':[beta]})
