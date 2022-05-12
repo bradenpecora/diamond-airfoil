@@ -45,12 +45,14 @@ boundaryField
 
     bottom_wake
     {
-        type            noSlip;
+        type            fixedValue;
+        value           uniform (3 0 0);
     }
 
     top_wake
     {
-        type            noSlip;
+        type            fixedValue;
+        value           uniform (3 0 0);
     }
 
     airfoil

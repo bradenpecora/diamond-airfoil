@@ -23,6 +23,7 @@ interpolationScheme cell;
 setFormat       csv;
 
 writeControl    writeTime; // this ensures that it's writing only at writeInterval
+purgeWrite 2;
 
 sets
 (
@@ -36,10 +37,11 @@ sets
         axis    xyz;
         start   (DXA NCHORD 0);
         end     (DXA PCHORD 0);
+        nPoints 1000;
     }
 );
 
-fields          ( U );
+fields          ( U, mag(U));
 
 
 // ************************************************************************* //

@@ -3,7 +3,7 @@
 # See https://portal.tacc.utexas.edu/user-guides/stampede2/#running 
 # for more details
 
-#SBATCH -J m3_alpha-30      # Job name
+#SBATCH -J m3_a-30      # Job name
 #SBATCH -o job.o%j       # Name of stdout output file
 #SBATCH -e job.e%j       # Name of stderr error file
 

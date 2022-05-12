@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : postProcess -latestTime -func singleGraph
 Date   : May 11 2022
-Time   : 16:34:49
-Host   : "c436-103.stampede2.tacc.utexas.edu"
-PID    : 225848
+Time   : 18:01:59
+Host   : "c403-081.stampede2.tacc.utexas.edu"
+PID    : 201202
 I/O    : uncollated
 Case   : /work2/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/mach3/alpha-30
 nProcs : 1
@@ -29,9 +29,16 @@ Reading set description:
 Time = 15
 
 Reading fields:
-    volVectorFields: U
 
 Executing functionObjects
+--> FOAM Warning : 
+    From function int Foam::sampledSets::classifyFields()
+    in file sampledSet/sampledSets/sampledSetsGrouping.C at line 140
+    Cannot find registered field matching U,
+--> FOAM Warning : 
+    From function int Foam::sampledSets::classifyFields()
+    in file sampledSet/sampledSets/sampledSetsGrouping.C at line 140
+    Cannot find registered field matching mag(U)
 
 End
 
