@@ -38,7 +38,7 @@ def find_beta(yshock, theta, c,alpha,dxa, **kwargs):
     beta = to_degree(beta)
     return beta
 
-def main(mach = 3):
+def main(mach = 5):
     mach_dir = 'mach{}/'.format(mach)
 
     thetabeta = pd.DataFrame(columns=['theta','beta'])

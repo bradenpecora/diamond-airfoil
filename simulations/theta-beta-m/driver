@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Parameters
-M="3"
+M="4"
 
 THICK="0.3"
 CHORD="3"
-ALPHA="-5"
+ALPHA="-25"
 
-STOP_TIME="15"
+STOP_TIME="10"
 
 # get dxa, location of where singleGraph line will be drawn
 DXA=$(python calculate_dxa.py $ALPHA $CHORD 2>&1)
