@@ -4,6 +4,6 @@ import sys
 alpha = float(sys.argv[1])
 chord = float(sys.argv[2])
 
-adjust = 0.95
+adjust = 0.60
 
 print(-1*adjust*chord*np.cos(alpha*np.pi/180))
