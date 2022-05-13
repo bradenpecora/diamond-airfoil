@@ -30,7 +30,7 @@ def find_beta(yshock, theta, c,alpha,dxa, **kwargs):
     x0 = c*np.cos(alpha)
     y0 = c*np.sin(alpha)
     x1 = abs(dxa)
-    y1 = abs(yshock)
+    y1 = yshock
 
     dy = y0-y1
     dx = x0-x1
@@ -38,7 +38,7 @@ def find_beta(yshock, theta, c,alpha,dxa, **kwargs):
     beta = to_degree(beta)
     return beta
 
-def main(mach = 5):
+def main(mach = 3):
     mach_dir = 'mach{}/'.format(mach)
 
     thetabeta = pd.DataFrame(columns=['theta','beta'])
@@ -62,7 +62,7 @@ def main(mach = 5):
         dudy = du/dy
 
         df = pd.DataFrame({'y':y,'umgag':umag,'dudy':dudy})
-        yshock = df.iloc[df['dudy'].idxmin()+1]['y'] #can remove '+1'?
+        yshock = (df.iloc[df['dudy'].idxmin()+2]['y'] + df.iloc[df['dudy'].idxmin()]['y'])/2#can remove '+1'?
 
         beta = find_beta(yshock=yshock,theta=theta,**params)
         this_thetabeta = pd.DataFrame({'theta':[theta],'beta':[beta]})
@@ -72,4 +72,5 @@ def main(mach = 5):
 
 
 if __name__ == '__main__':
-    main()
+    for m in [3,4,5]:
+        main(m)
