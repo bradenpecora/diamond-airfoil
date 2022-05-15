@@ -1,0 +1,9 @@
+/work/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/mach5/alpha0
+Sun May 15 05:03:51 CDT 2022
+Running blockMesh on /work/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/mach5/alpha0
+Running checkMesh on /work/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/mach5/alpha0
+Running decomposePar on /work/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/mach5/alpha0
+Running rhoCentralFoam in parallel on /work/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/mach5/alpha0 using 64 processes
+Running reconstructPar on /work/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/mach5/alpha0
+Running postProcess on /work/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/mach5/alpha0
+Sun May 15 05:44:32 CDT 2022

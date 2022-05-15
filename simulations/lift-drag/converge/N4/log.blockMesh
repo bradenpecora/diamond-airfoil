@@ -1,0 +1,126 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-49b2b3b8b082
+Exec   : blockMesh
+Date   : May 15 2022
+Time   : 04:40:17
+Host   : "c424-022.stampede2.tacc.utexas.edu"
+PID    : 39923
+I/O    : uncollated
+Case   : /work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/converge/N4
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/converge/N4/system/blockMeshDict"
+No non-linear block edges defined
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+--> FOAM Warning : 
+    From function Foam::polyMesh::polyMesh(const Foam::IOobject &, Foam::Field<Foam::Vector<double>> &&, const Foam::List<Foam::cellShape> &, const Foam::List<Foam::List<Foam::face>> &, const Foam::List<Foam::word> &, const Foam::PtrList<Foam::dictionary> &, const Foam::word &, const Foam::word &, bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 873
+    Found 24 undefined faces in mesh; adding to default patch.
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 12
+		Number of boundary faces : 48
+		Number of defined boundary faces : 48
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.00295504 .. 0.147752
+        j : 0.0155934 .. 0.311867
+        k : 0.1
+    Block 1 cell size :
+        i : 0.0155934 .. 0.311867 0.0155921 .. 0.311842 0.0155934 .. 0.311867 0.0155921 .. 0.311842 
+        j : 0.00479623 .. 0.0479623 0.00479611 .. 0.0479611 0.00479623 .. 0.0479623 0.00479611 .. 0.0479611 
+        k : 0.1
+    Block 2 cell size :
+        i : 0.296274 .. 0.0148137 0.296298 .. 0.0148149 0.296274 .. 0.0148137 0.296298 .. 0.0148149 
+        j : 0.00477243 .. 0.0477243 0.0047725 .. 0.047725 0.00477243 .. 0.0477243 0.0047725 .. 0.047725 
+        k : 0.1
+    Block 3 cell size :
+        i : 0.0148137 .. 0.296274 0.0148149 .. 0.296298 0.0148137 .. 0.296274 0.0148149 .. 0.296298 
+        j : 0.00479623 .. 0.0479623 0.00479611 .. 0.0479611 0.00479623 .. 0.0479623 0.00479611 .. 0.0479611 
+        k : 0.1
+    Block 4 cell size :
+        i : 0.311867 .. 0.0155934 0.311842 .. 0.0155921 0.311867 .. 0.0155934 0.311842 .. 0.0155921 
+        j : 0.00477243 .. 0.0477243 0.0047725 .. 0.047725 0.00477243 .. 0.0477243 0.0047725 .. 0.047725 
+        k : 0.1
+    Block 5 cell size :
+        i : 0.00295504 .. 0.147752
+        j : 0.311867 .. 0.0155934
+        k : 0.1
+    Block 6 cell size :
+        i : 0.00295504 .. 0.147752
+        j : 0.0155934 .. 0.311867
+        k : 0.1
+    Block 7 cell size :
+        i : 0.0155934 .. 0.311867 0.0155921 .. 0.311842 0.0155934 .. 0.311867 0.0155921 .. 0.311842 
+        j : 0.00479623 .. 0.0479623 0.00479611 .. 0.0479611 0.00479623 .. 0.0479623 0.00479611 .. 0.0479611 
+        k : 0.1
+    Block 8 cell size :
+        i : 0.296274 .. 0.0148137 0.296298 .. 0.0148149 0.296274 .. 0.0148137 0.296298 .. 0.0148149 
+        j : 0.00477243 .. 0.0477243 0.0047725 .. 0.047725 0.00477243 .. 0.0477243 0.0047725 .. 0.047725 
+        k : 0.1
+    Block 9 cell size :
+        i : 0.0148137 .. 0.296274 0.0148149 .. 0.296298 0.0148137 .. 0.296274 0.0148149 .. 0.296298 
+        j : 0.00479623 .. 0.0479623 0.00479611 .. 0.0479611 0.00479623 .. 0.0479623 0.00479611 .. 0.0479611 
+        k : 0.1
+    Block 10 cell size :
+        i : 0.311867 .. 0.0155934 0.311842 .. 0.0155921 0.311867 .. 0.0155934 0.311842 .. 0.0155921 
+        j : 0.00477243 .. 0.0477243 0.0047725 .. 0.047725 0.00477243 .. 0.0477243 0.0047725 .. 0.047725 
+        k : 0.1
+    Block 11 cell size :
+        i : 0.00295504 .. 0.147752
+        j : 0.311867 .. 0.0155934
+        k : 0.1
+Creating cells
+Creating patches
+
+There are no merge patch pairs edges
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-6 -6 -0.05) (6 6 0.05)
+  nPoints: 117040
+  nCells: 57600
+  nFaces: 231320
+  nInternalFaces: 114280
+----------------
+Patches
+----------------
+  patch 0 (start: 114280 size: 120) name: inlet
+  patch 1 (start: 114400 size: 120) name: outlet
+  patch 2 (start: 114520 size: 640) name: airfoil
+  patch 3 (start: 115160 size: 400) name: top_fore
+  patch 4 (start: 115560 size: 80) name: top_wake
+  patch 5 (start: 115640 size: 400) name: bottom_fore
+  patch 6 (start: 116040 size: 80) name: bottom_wake
+  patch 7 (start: 116120 size: 115200) name: defaultFaces
+
+End
+

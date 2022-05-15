@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Parameters
-M="3"
+M="5"
 
 THICK="0.3"
 CHORD="3"
@@ -22,7 +22,7 @@ ALPHADIR="$MACHDIR/alpha$ALPHA"
 cp -r template $ALPHADIR
 
 # save parameters to file
-python save_parameters_to_file.py $ALPHADIR $M $THICK $CHORD $ALPHA $STOP_TIME $DXA
+python save_parameters_to_file.py $ALPHADIR $M $THICK $CHORD $ALPHA $STOP_TIME 
 # create blockMeshDict
 python mesh_gen.py $THICK $CHORD $ALPHA $ALPHADIR
 
@@ -37,11 +37,14 @@ sed -i -e "s/MACH_NUMBER/$M/g" "$ALPHADIR/0/U"
 sed -i -e "s/END_TIME/$STOP_TIME/g" "$ALPHADIR/system/controlDict"
 
 #edit single graph file
-NCHORD=$(expr -1 \* $CHORD) # negative value of chord
+x=$(python calculate1.py $CHORD $ALPHA 2>&1)
+y=$(python calculate2.py $THICK $ALPHA 2>&1)
+z=$(python calculate1.py $THICK $ALPHA 2>&1)
 
-sed -i -e "s/NCHORD/$NCHORD/g" "$ALPHADIR/system/singleGraph"
-sed -i -e "s/PCHORD/$CHORD/g" "$ALPHADIR/system/singleGraph"
-sed -i -e "s/PTHICK/$THICK/g" "$ALPHADIR/system/singleGraph"
+sed -i -e "s/XLENGTH/$x/g" "$ALPHADIR/system/singleGraph"
+sed -i -e "s/YLENGTH/$y/g" "$ALPHADIR/system/singleGraph"
+sed -i -e "s/ZLENGTH/$z/g" "$ALPHADIR/system/singleGraph"
+
 
 
 # run simulation
