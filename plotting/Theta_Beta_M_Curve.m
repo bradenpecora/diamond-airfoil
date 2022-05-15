@@ -41,7 +41,7 @@ end
 set(0,'defaulttextinterpreter','latex')
 set(gca, 'TickLabelInterpreter','latex')
 % sgtitle('$\delta$-$\beta$-M Curve M=3.0')
-xlabel('Deflection Angle $\delta$ (deg)')
+xlabel('Deflection Angle $\theta$ (deg)')
 ylabel('Shock Wave Angle $\beta$ (deg)')
 legend('Anaylitcal, $M=3$', '24,000 Cells', '90,000 Cells', '360,000 Cells','location','northwest','interpreter','latex')
 pos = get(h,'Position');
