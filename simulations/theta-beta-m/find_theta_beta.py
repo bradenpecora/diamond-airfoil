@@ -49,7 +49,8 @@ def main(mach = 3):
         params = {key: float(value) for key, value in params.items()}
         theta = find_theta(**params)
 
-        stop_time = int(params['stop_time'])
+        # stop_time = int(params['stop_time'])
+        stop_time = 8
         line = pd.read_csv("{}/postProcessing/singleGraph/{}/line_U.csv".format(wd,stop_time))
         line['umag'] = line.apply(lambda x: np.sqrt(x.U_0**2 + x.U_1**2 + x.U_2**2),axis=1)
 
@@ -72,5 +73,5 @@ def main(mach = 3):
 
 
 if __name__ == '__main__':
-    for m in [3,4,5]:
-        main(m)
+    # for m in [3,4,5]:
+    main()
