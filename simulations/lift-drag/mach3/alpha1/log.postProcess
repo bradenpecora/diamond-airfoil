@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : postProcess -latestTime -func singleGraph
 Date   : May 15 2022
-Time   : 02:03:44
-Host   : "c403-001.stampede2.tacc.utexas.edu"
-PID    : 201498
+Time   : 03:05:15
+Host   : "login1.stampede2.tacc.utexas.edu"
+PID    : 27777
 I/O    : uncollated
 Case   : /work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/mach3/alpha1
 nProcs : 1

@@ -5,7 +5,7 @@ M="3"
 
 THICK="0.3"
 CHORD="3"
-ALPHA="1"
+ALPHA="5"
 
 STOP_TIME="10"
 
