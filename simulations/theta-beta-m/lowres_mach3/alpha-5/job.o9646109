@@ -1,0 +1,9 @@
+/work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/lowres_mach3/alpha-5
+Sun May 15 04:00:08 CDT 2022
+Running blockMesh on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/lowres_mach3/alpha-5
+Running checkMesh on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/lowres_mach3/alpha-5
+Running decomposePar on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/lowres_mach3/alpha-5
+Running rhoCentralFoam in parallel on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/lowres_mach3/alpha-5 using 64 processes
+Running reconstructPar on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/lowres_mach3/alpha-5
+Running postProcess on /work/07674/bradenp/stampede2/diamond-airfoil/simulations/theta-beta-m/lowres_mach3/alpha-5
+Sun May 15 04:06:55 CDT 2022
