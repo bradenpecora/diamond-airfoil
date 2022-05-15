@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Parameters
+M="3"
+
+THICK="0.3"
+CHORD="3"
+ALPHA="0"
+
+STOP_TIME="10"
+
+# set up python
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate base
+
+# Make directory for mach if it doesn't exist
+MACHDIR="mach$M"
+mkdir $MACHDIR
+
+# copy template and rename
+ALPHADIR="$MACHDIR/alpha$ALPHA"
+cp -r template $ALPHADIR
+
+# save parameters to file
+python save_parameters_to_file.py $ALPHADIR $M $THICK $CHORD $ALPHA $STOP_TIME $DXA
+# create blockMeshDict
+python mesh_gen.py $THICK $CHORD $ALPHA $ALPHADIR
+
+# adjust job name
+sed -i -e "s/MACH/$M/g" "$ALPHADIR/openfoam.v7.serial.slurm"
+sed -i -e "s/ALPHA/$ALPHA/g" "$ALPHADIR/openfoam.v7.serial.slurm"
+
+# input mach number to initial conditions
+sed -i -e "s/MACH_NUMBER/$M/g" "$ALPHADIR/0/U"
+
+# add stop time to controlDict
+sed -i -e "s/END_TIME/$STOP_TIME/g" "$ALPHADIR/system/controlDict"
+
+#edit single graph file
+NCHORD=$(expr -1 \* $CHORD) # negative value of chord
+
+sed -i -e "s/NCHORD/$NCHORD/g" "$ALPHADIR/system/singleGraph"
+sed -i -e "s/PCHORD/$CHORD/g" "$ALPHADIR/system/singleGraph"
+sed -i -e "s/PTHICK/$THICK/g" "$ALPHADIR/system/singleGraph"
+
+
+# run simulation
+cd $ALPHADIR
+sbatch openfoam.v7.serial.slurm
