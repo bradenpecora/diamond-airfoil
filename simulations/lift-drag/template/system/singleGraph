@@ -35,32 +35,32 @@ sets
     {
         type    lineUniform;
         axis    xyz;
-        start   (0 NCHORD 0);
-        end     (PTHICK 0 0);
+        start   (NCHORD 0 0);
+        end     (0 PTHICK 0);
         nPoints 1000;
     }
     surface2 
     {
         type    lineUniform;
         axis    xyz;
-        start   (PTHICK 0 0);
-        end     (0 PCHORD 0);
+        start   (0 PTHICK 0);
+        end     (PCHORD 0 0);
         nPoints 1000;
     }
     surface3 
     {
         type    lineUniform;
         axis    xyz;
-        start   (0 PCHORD 0);
-        end     (-PTHICK 0 0);
+        start   (PCHORD 0 0);
+        end     (0 -PTHICK 0);
         nPoints 1000;
     }
     surface4 
     {
         type    lineUniform;
         axis    xyz;
-        start   (-PTHICK 0 0);
-        end     (0 NCHORD 0);
+        start   (0 -PTHICK 0);
+        end     (NCHORD 0 0);
         nPoints 1000;
     }
 );

@@ -8,9 +8,9 @@
 Build  : 7-49b2b3b8b082
 Exec   : postProcess -latestTime -func singleGraph
 Date   : May 14 2022
-Time   : 23:40:33
+Time   : 23:49:34
 Host   : "login1.stampede2.tacc.utexas.edu"
-PID    : 133648
+PID    : 189238
 I/O    : uncollated
 Case   : /work2/07705/jmj3957/stampede2/diamond-airfoil/simulations/lift-drag/mach3/alpha0
 nProcs : 1
@@ -23,6 +23,54 @@ Create time
 
 Create mesh for time = 10
 
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const Foam::Vector<double> &, int, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
 Reading set description:
     surface1
     surface2
