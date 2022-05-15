@@ -43,4 +43,4 @@ ylabel('Shock Wave Angle $\beta$ (deg)')
 legend('Mach 3 - Anaylitcal', 'Mach 3 - Numerical', 'Mach 4 - Analytical', 'Mach 4 - Numerical', 'Mach 5 - Analytical', 'Mach 5 - Numerical', 'location','best','interpreter','latex')
 pos = get(h,'Position');
 set(h,'PaperPositionMode','Auto','PaperUnits','Inches','PaperSize',[pos(3), pos(4)])
-% print(h,'-dpdf','-r0','figures/tbm.pdf')
+print(h,'-dpdf','-r0','figures/tbm.pdf')
